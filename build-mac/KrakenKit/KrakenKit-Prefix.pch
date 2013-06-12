@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'KrakenKit' target in the 'KrakenKit' project
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+	#if __IPHONE_OS_VERSION_MIN_REQUIRED
+		#import <MobileCoreServices/MobileCoreServices.h>
+	#else
+		#import <Cocoa/Cocoa.h>
+		#import <CoreServices/CoreServices.h>
+	#endif
+	#import <SystemConfiguration/SystemConfiguration.h>
+	#import <KrakenKit/KRATypes.h>
+#endif

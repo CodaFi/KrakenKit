@@ -1,0 +1,1527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844002051768E84000D747B9 /* FXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E11768E84000D747B9 /* FXKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002061768E84000D747B9 /* FXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E11768E84000D747B9 /* FXKeychain.h */; };
+		844002071768E84000D747B9 /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E21768E84000D747B9 /* FXKeychain.m */; };
+		844002081768E84000D747B9 /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E21768E84000D747B9 /* FXKeychain.m */; };
+		844002091768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E31768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8440020A1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E31768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h */; };
+		8440020B1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E41768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m */; };
+		8440020C1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E41768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m */; };
+		8440020D1768E84000D747B9 /* KRAClient+KRASearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E51768E84000D747B9 /* KRAClient+KRASearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8440020E1768E84000D747B9 /* KRAClient+KRASearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E51768E84000D747B9 /* KRAClient+KRASearch.h */; };
+		8440020F1768E84000D747B9 /* KRAClient+KRASearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E61768E84000D747B9 /* KRAClient+KRASearch.m */; };
+		844002101768E84000D747B9 /* KRAClient+KRASearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E61768E84000D747B9 /* KRAClient+KRASearch.m */; };
+		844002111768E84000D747B9 /* KRAClient+KRAUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E71768E84000D747B9 /* KRAClient+KRAUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002121768E84000D747B9 /* KRAClient+KRAUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E71768E84000D747B9 /* KRAClient+KRAUser.h */; };
+		844002131768E84000D747B9 /* KRAClient+KRAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E81768E84000D747B9 /* KRAClient+KRAUser.m */; };
+		844002141768E84000D747B9 /* KRAClient+KRAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E81768E84000D747B9 /* KRAClient+KRAUser.m */; };
+		844002151768E84000D747B9 /* KRAClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E91768E84000D747B9 /* KRAClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002161768E84000D747B9 /* KRAClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E91768E84000D747B9 /* KRAClient.h */; };
+		844002171768E84000D747B9 /* KRAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001EA1768E84000D747B9 /* KRAClient.m */; };
+		844002181768E84000D747B9 /* KRAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001EA1768E84000D747B9 /* KRAClient.m */; };
+		844002191768E84000D747B9 /* KRAComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001EB1768E84000D747B9 /* KRAComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8440021A1768E84000D747B9 /* KRAComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001EB1768E84000D747B9 /* KRAComment.h */; };
+		8440021B1768E84000D747B9 /* KRAComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001EC1768E84000D747B9 /* KRAComment.m */; };
+		8440021C1768E84000D747B9 /* KRAComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001EC1768E84000D747B9 /* KRAComment.m */; };
+		8440021D1768E84000D747B9 /* KRACommit.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001ED1768E84000D747B9 /* KRACommit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8440021E1768E84000D747B9 /* KRACommit.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001ED1768E84000D747B9 /* KRACommit.h */; };
+		844002201768E84000D747B9 /* KRACommit.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001EE1768E84000D747B9 /* KRACommit.m */; };
+		844002211768E84000D747B9 /* KRAEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001EF1768E84000D747B9 /* KRAEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002221768E84000D747B9 /* KRAEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001EF1768E84000D747B9 /* KRAEvent.h */; };
+		844002231768E84000D747B9 /* KRAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F01768E84000D747B9 /* KRAEvent.m */; };
+		844002241768E84000D747B9 /* KRAEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F01768E84000D747B9 /* KRAEvent.m */; };
+		844002251768E84000D747B9 /* KRAEventPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F11768E84000D747B9 /* KRAEventPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002261768E84000D747B9 /* KRAEventPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F11768E84000D747B9 /* KRAEventPayload.h */; };
+		844002271768E84000D747B9 /* KRAEventPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F21768E84000D747B9 /* KRAEventPayload.m */; };
+		844002281768E84000D747B9 /* KRAEventPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F21768E84000D747B9 /* KRAEventPayload.m */; };
+		844002291768E84000D747B9 /* KRAIssue.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F31768E84000D747B9 /* KRAIssue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8440022A1768E84000D747B9 /* KRAIssue.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F31768E84000D747B9 /* KRAIssue.h */; };
+		8440022B1768E84000D747B9 /* KRAIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F41768E84000D747B9 /* KRAIssue.m */; };
+		8440022C1768E84000D747B9 /* KRAIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F41768E84000D747B9 /* KRAIssue.m */; };
+		8440022D1768E84000D747B9 /* KRAIssueLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F51768E84000D747B9 /* KRAIssueLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8440022E1768E84000D747B9 /* KRAIssueLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F51768E84000D747B9 /* KRAIssueLabel.h */; };
+		8440022F1768E84000D747B9 /* KRAIssueLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F61768E84000D747B9 /* KRAIssueLabel.m */; };
+		844002301768E84000D747B9 /* KRAIssueLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F61768E84000D747B9 /* KRAIssueLabel.m */; };
+		844002311768E84000D747B9 /* KrakenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F71768E84000D747B9 /* KrakenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002321768E84000D747B9 /* KrakenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F71768E84000D747B9 /* KrakenKit.h */; };
+		844002331768E84000D747B9 /* KRANotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F81768E84000D747B9 /* KRANotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002341768E84000D747B9 /* KRANotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001F81768E84000D747B9 /* KRANotification.h */; };
+		844002351768E84000D747B9 /* KRANotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F91768E84000D747B9 /* KRANotification.m */; };
+		844002361768E84000D747B9 /* KRANotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001F91768E84000D747B9 /* KRANotification.m */; };
+		844002371768E84000D747B9 /* KRAPullRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001FA1768E84000D747B9 /* KRAPullRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002381768E84000D747B9 /* KRAPullRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001FA1768E84000D747B9 /* KRAPullRequest.h */; };
+		844002391768E84000D747B9 /* KRAPullRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001FB1768E84000D747B9 /* KRAPullRequest.m */; };
+		8440023A1768E84000D747B9 /* KRAPullRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001FB1768E84000D747B9 /* KRAPullRequest.m */; };
+		8440023B1768E84000D747B9 /* KRARepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001FC1768E84000D747B9 /* KRARepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8440023C1768E84000D747B9 /* KRARepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001FC1768E84000D747B9 /* KRARepository.h */; };
+		8440023D1768E84000D747B9 /* KRARepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001FD1768E84000D747B9 /* KRARepository.m */; };
+		8440023E1768E84000D747B9 /* KRARepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001FD1768E84000D747B9 /* KRARepository.m */; };
+		8440023F1768E84000D747B9 /* KRATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001FE1768E84000D747B9 /* KRATypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002401768E84000D747B9 /* KRATypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001FE1768E84000D747B9 /* KRATypes.h */; };
+		844002411768E84000D747B9 /* KRATypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001FF1768E84000D747B9 /* KRATypes.m */; };
+		844002421768E84000D747B9 /* KRATypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001FF1768E84000D747B9 /* KRATypes.m */; };
+		844002431768E84000D747B9 /* KRAUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 844002001768E84000D747B9 /* KRAUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002441768E84000D747B9 /* KRAUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 844002001768E84000D747B9 /* KRAUser.h */; };
+		844002451768E84000D747B9 /* KRAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 844002011768E84000D747B9 /* KRAUser.m */; };
+		844002461768E84000D747B9 /* KRAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 844002011768E84000D747B9 /* KRAUser.m */; };
+		844002471768E84000D747B9 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 844002021768E84000D747B9 /* metamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844002481768E84000D747B9 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 844002021768E84000D747B9 /* metamacros.h */; };
+		844002491768E84000D747B9 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 844002031768E84000D747B9 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8440024A1768E84000D747B9 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 844002031768E84000D747B9 /* NSData+Base64.h */; };
+		8440024B1768E84000D747B9 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 844002041768E84000D747B9 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		8440024C1768E84000D747B9 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 844002041768E84000D747B9 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		8440025B1768EAAA00D747B9 /* KRACommit.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001EE1768E84000D747B9 /* KRACommit.m */; };
+		84774A8B1745974C00CA311B /* KRAClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 84774A8A1745974C00CA311B /* KRAClientSpec.m */; };
+		849E8F801749D7B2005FAB56 /* KRAEventSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E8F7F1749D7B2005FAB56 /* KRAEventSpec.m */; };
+		849E9005174D8915005FAB56 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E9004174D8915005FAB56 /* Cocoa.framework */; };
+		849E9045174D8A85005FAB56 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE1F174028CE001B7683 /* AFHTTPClient.m */; };
+		849E9046174D8A85005FAB56 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE21174028CE001B7683 /* AFHTTPRequestOperation.m */; };
+		849E9047174D8A85005FAB56 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE23174028CE001B7683 /* AFImageRequestOperation.m */; };
+		849E9048174D8A85005FAB56 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE25174028CF001B7683 /* AFJSONRequestOperation.m */; };
+		849E9049174D8A85005FAB56 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE2A174028CF001B7683 /* AFPropertyListRequestOperation.m */; };
+		849E904A174D8A85005FAB56 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE2C174028CF001B7683 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		849E904B174D8A85005FAB56 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE2E174028CF001B7683 /* AFXMLRequestOperation.m */; };
+		849E904E174D8A95005FAB56 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E904D174D8A95005FAB56 /* Security.framework */; };
+		849E9050174D8AA0005FAB56 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E904F174D8AA0005FAB56 /* CoreServices.framework */; };
+		849E9053174D8AC0005FAB56 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FE171740287A001B7683 /* Mantle.framework */; };
+		849E906B174D8C83005FAB56 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E906A174D8C83005FAB56 /* SystemConfiguration.framework */; };
+		849E9076174D8E28005FAB56 /* KrakenKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 849E9003174D8915005FAB56 /* KrakenKit.framework */; };
+		849E9079174D8E47005FAB56 /* KrakenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E9003174D8915005FAB56 /* KrakenKit.framework */; };
+		849E907A174D8EA2005FAB56 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E906A174D8C83005FAB56 /* SystemConfiguration.framework */; };
+		849E907B174D8EA9005FAB56 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E904F174D8AA0005FAB56 /* CoreServices.framework */; };
+		849E9080174D8EDE005FAB56 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FEBA17404614001B7683 /* libSpecta.a */; };
+		849E9082174D8EDE005FAB56 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E9081174D8EDE005FAB56 /* libExpecta.a */; };
+		84ADF9D716ADA7C60026F990 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADF9D616ADA7C60026F990 /* Foundation.framework */; };
+		84C4542517503EF9001ECB0F /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE28174028CF001B7683 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F2FE31174028CF001B7683 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE1E174028CE001B7683 /* AFHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F2FE32174028CF001B7683 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE1F174028CE001B7683 /* AFHTTPClient.m */; };
+		84F2FE33174028CF001B7683 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE20174028CE001B7683 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F2FE34174028CF001B7683 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE21174028CE001B7683 /* AFHTTPRequestOperation.m */; };
+		84F2FE35174028CF001B7683 /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE22174028CE001B7683 /* AFImageRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F2FE36174028CF001B7683 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE23174028CE001B7683 /* AFImageRequestOperation.m */; };
+		84F2FE37174028CF001B7683 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE24174028CF001B7683 /* AFJSONRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F2FE38174028CF001B7683 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE25174028CF001B7683 /* AFJSONRequestOperation.m */; };
+		84F2FE3B174028CF001B7683 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE28174028CF001B7683 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F2FE3C174028CF001B7683 /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE29174028CF001B7683 /* AFPropertyListRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F2FE3D174028CF001B7683 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE2A174028CF001B7683 /* AFPropertyListRequestOperation.m */; };
+		84F2FE3E174028CF001B7683 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE2B174028CF001B7683 /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F2FE3F174028CF001B7683 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE2C174028CF001B7683 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		84F2FE40174028CF001B7683 /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE2D174028CF001B7683 /* AFXMLRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F2FE41174028CF001B7683 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE2E174028CF001B7683 /* AFXMLRequestOperation.m */; };
+		84F2FE46174028DD001B7683 /* libMantle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FE1B1740287A001B7683 /* libMantle.a */; };
+		84F2FE48174029C1001B7683 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FE47174029C1001B7683 /* SystemConfiguration.framework */; };
+		84F2FE4A174029C6001B7683 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FE49174029C6001B7683 /* MobileCoreServices.framework */; };
+		84F2FE6317402DEC001B7683 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FE6217402DEC001B7683 /* SenTestingKit.framework */; };
+		84F2FE6617402DEC001B7683 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADF9D616ADA7C60026F990 /* Foundation.framework */; };
+		84F2FECD174046B9001B7683 /* KRAUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FECC174046B9001B7683 /* KRAUserSpec.m */; };
+		84F2FED817404BC8001B7683 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FED717404BC8001B7683 /* Security.framework */; };
+		84F2FED917404BEE001B7683 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FED717404BC8001B7683 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		849E9051174D8AB9005FAB56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D042FC3B15F72B23004E8054;
+			remoteInfo = "Mantle Mac";
+		};
+		849E9077174D8E31005FAB56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84ADF9CB16ADA7C60026F990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849E9002174D8915005FAB56;
+			remoteInfo = KrakenKit;
+		};
+		849E907C174D8EC9005FAB56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE74174045CE001B7683 /* Expecta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9ACDF0B13B2DD520010F4D7;
+			remoteInfo = Expecta;
+		};
+		849E907E174D8EC9005FAB56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE83174045D1001B7683 /* Specta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D96A2514B6B8AB007D9521;
+			remoteInfo = Specta;
+		};
+		84F2FE161740287A001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC3C15F72B23004E8054;
+			remoteInfo = "Mantle Mac";
+		};
+		84F2FE181740287A001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC5415F72B23004E8054;
+			remoteInfo = "Mantle Mac Tests";
+		};
+		84F2FE1A1740287A001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC7915F72BC7004E8054;
+			remoteInfo = "Mantle iOS";
+		};
+		84F2FE1C1740287A001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC8715F72BC7004E8054;
+			remoteInfo = "Mantle iOS Tests";
+		};
+		84F2FE44174028D6001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D042FC7815F72BC7004E8054;
+			remoteInfo = "Mantle iOS";
+		};
+		84F2FE98174045D8001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE74174045CE001B7683 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9ACDF0C13B2DD520010F4D7;
+			remoteInfo = Expecta;
+		};
+		84F2FE9A174045D8001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE74174045CE001B7683 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067CE13B2E6D100EA26FF;
+			remoteInfo = "Expecta-iOS";
+		};
+		84F2FE9C174045D8001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE74174045CE001B7683 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9ACDF1D13B2DD520010F4D7;
+			remoteInfo = ExpectaTests;
+		};
+		84F2FE9E174045D8001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE74174045CE001B7683 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067DA13B2E6D100EA26FF;
+			remoteInfo = "Expecta-iOSTests";
+		};
+		84F2FEB917404614001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE83174045D1001B7683 /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9D96A2614B6B8AB007D9521;
+			remoteInfo = Specta;
+		};
+		84F2FEBB17404614001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE83174045D1001B7683 /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9B777A414BA294B00D8DC76;
+			remoteInfo = "Specta-iOS";
+		};
+		84F2FEBD17404614001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE83174045D1001B7683 /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9D96A3A14B6B8AB007D9521;
+			remoteInfo = SpectaTests;
+		};
+		84F2FEBF17404614001B7683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE83174045D1001B7683 /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9B777B314BA294C00D8DC76;
+			remoteInfo = "Specta-iOSTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		849E9075174D8E15005FAB56 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				849E9076174D8E28005FAB56 /* KrakenKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ADF9D116ADA7C60026F990 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		844001E11768E84000D747B9 /* FXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXKeychain.h; path = ../../src/objc/FXKeychain.h; sourceTree = "<group>"; };
+		844001E21768E84000D747B9 /* FXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXKeychain.m; path = ../../src/objc/FXKeychain.m; sourceTree = "<group>"; };
+		844001E31768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KRAClient+KRAHandlerBlocks.h"; sourceTree = "<group>"; };
+		844001E41768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KRAClient+KRAHandlerBlocks.m"; sourceTree = "<group>"; };
+		844001E51768E84000D747B9 /* KRAClient+KRASearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KRAClient+KRASearch.h"; sourceTree = "<group>"; };
+		844001E61768E84000D747B9 /* KRAClient+KRASearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KRAClient+KRASearch.m"; sourceTree = "<group>"; };
+		844001E71768E84000D747B9 /* KRAClient+KRAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KRAClient+KRAUser.h"; sourceTree = "<group>"; };
+		844001E81768E84000D747B9 /* KRAClient+KRAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KRAClient+KRAUser.m"; sourceTree = "<group>"; };
+		844001E91768E84000D747B9 /* KRAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAClient.h; sourceTree = "<group>"; };
+		844001EA1768E84000D747B9 /* KRAClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAClient.m; sourceTree = "<group>"; };
+		844001EB1768E84000D747B9 /* KRAComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAComment.h; sourceTree = "<group>"; };
+		844001EC1768E84000D747B9 /* KRAComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAComment.m; sourceTree = "<group>"; };
+		844001ED1768E84000D747B9 /* KRACommit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRACommit.h; sourceTree = "<group>"; };
+		844001EE1768E84000D747B9 /* KRACommit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRACommit.m; sourceTree = "<group>"; };
+		844001EF1768E84000D747B9 /* KRAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAEvent.h; sourceTree = "<group>"; };
+		844001F01768E84000D747B9 /* KRAEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAEvent.m; sourceTree = "<group>"; };
+		844001F11768E84000D747B9 /* KRAEventPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAEventPayload.h; sourceTree = "<group>"; };
+		844001F21768E84000D747B9 /* KRAEventPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAEventPayload.m; sourceTree = "<group>"; };
+		844001F31768E84000D747B9 /* KRAIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAIssue.h; sourceTree = "<group>"; };
+		844001F41768E84000D747B9 /* KRAIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAIssue.m; sourceTree = "<group>"; };
+		844001F51768E84000D747B9 /* KRAIssueLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAIssueLabel.h; sourceTree = "<group>"; };
+		844001F61768E84000D747B9 /* KRAIssueLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAIssueLabel.m; sourceTree = "<group>"; };
+		844001F71768E84000D747B9 /* KrakenKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KrakenKit.h; sourceTree = "<group>"; };
+		844001F81768E84000D747B9 /* KRANotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRANotification.h; sourceTree = "<group>"; };
+		844001F91768E84000D747B9 /* KRANotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRANotification.m; sourceTree = "<group>"; };
+		844001FA1768E84000D747B9 /* KRAPullRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAPullRequest.h; sourceTree = "<group>"; };
+		844001FB1768E84000D747B9 /* KRAPullRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAPullRequest.m; sourceTree = "<group>"; };
+		844001FC1768E84000D747B9 /* KRARepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRARepository.h; sourceTree = "<group>"; };
+		844001FD1768E84000D747B9 /* KRARepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRARepository.m; sourceTree = "<group>"; };
+		844001FE1768E84000D747B9 /* KRATypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRATypes.h; sourceTree = "<group>"; };
+		844001FF1768E84000D747B9 /* KRATypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRATypes.m; sourceTree = "<group>"; };
+		844002001768E84000D747B9 /* KRAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAUser.h; sourceTree = "<group>"; };
+		844002011768E84000D747B9 /* KRAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAUser.m; sourceTree = "<group>"; };
+		844002021768E84000D747B9 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = ../../src/objc/metamacros.h; sourceTree = "<group>"; };
+		844002031768E84000D747B9 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "../../src/objc/NSData+Base64.h"; sourceTree = "<group>"; };
+		844002041768E84000D747B9 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "../../src/objc/NSData+Base64.m"; sourceTree = "<group>"; };
+		84774A8A1745974C00CA311B /* KRAClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAClientSpec.m; sourceTree = "<group>"; };
+		849E8F7F1749D7B2005FAB56 /* KRAEventSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAEventSpec.m; sourceTree = "<group>"; };
+		849E8FCC174D87E4005FAB56 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		849E8FCE174D87E4005FAB56 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		849E8FCF174D87E4005FAB56 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		849E8FD0174D87E4005FAB56 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		849E8FD1174D87E4005FAB56 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		849E8FD3174D87E4005FAB56 /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		849E8FD4174D87E4005FAB56 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		849E8FD6174D87E4005FAB56 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		849E8FD7174D87E4005FAB56 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		849E8FD8174D87E4005FAB56 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		849E8FDA174D87E4005FAB56 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		849E8FDB174D87E4005FAB56 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		849E8FDC174D87E4005FAB56 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		849E8FDD174D87E4005FAB56 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		849E8FDE174D87E4005FAB56 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		849E8FDF174D87E4005FAB56 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		849E9003174D8915005FAB56 /* KrakenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KrakenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		849E9004174D8915005FAB56 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		849E9007174D8915005FAB56 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		849E9008174D8915005FAB56 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		849E9009174D8915005FAB56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		849E901A174D8915005FAB56 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		849E904D174D8A95005FAB56 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		849E904F174D8AA0005FAB56 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		849E9054174D8ACE005FAB56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		849E9056174D8B03005FAB56 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		849E9057174D8B04005FAB56 /* KrakenKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KrakenKit-Info.plist"; sourceTree = "<group>"; };
+		849E9058174D8B04005FAB56 /* KrakenKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KrakenKit-Prefix.pch"; sourceTree = "<group>"; };
+		849E906A174D8C83005FAB56 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		849E9070174D8DD7005FAB56 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		849E9071174D8DD7005FAB56 /* KrakenKitTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KrakenKitTests-Info.plist"; sourceTree = "<group>"; };
+		849E9081174D8EDE005FAB56 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = ../External/Mantle/MantleTests/expecta/build/Release/libExpecta.a; sourceTree = "<group>"; };
+		84ADF9D316ADA7C60026F990 /* libKrakenKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKrakenKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ADF9D616ADA7C60026F990 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = External/Mantle/Mantle.xcodeproj; sourceTree = SOURCE_ROOT; };
+		84F2FE1E174028CE001B7683 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = External/AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
+		84F2FE1F174028CE001B7683 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = External/AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
+		84F2FE20174028CE001B7683 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = External/AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		84F2FE21174028CE001B7683 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = External/AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		84F2FE22174028CE001B7683 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = External/AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		84F2FE23174028CE001B7683 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = External/AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		84F2FE24174028CF001B7683 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = External/AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		84F2FE25174028CF001B7683 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = External/AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		84F2FE28174028CF001B7683 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = External/AFNetworking/AFNetworking/AFNetworking.h; sourceTree = SOURCE_ROOT; };
+		84F2FE29174028CF001B7683 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = External/AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		84F2FE2A174028CF001B7683 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = External/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		84F2FE2B174028CF001B7683 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = External/AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = SOURCE_ROOT; };
+		84F2FE2C174028CF001B7683 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = External/AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = SOURCE_ROOT; };
+		84F2FE2D174028CF001B7683 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = External/AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		84F2FE2E174028CF001B7683 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = External/AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		84F2FE47174029C1001B7683 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		84F2FE49174029C6001B7683 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		84F2FE6117402DEC001B7683 /* KrakenKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrakenKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F2FE6217402DEC001B7683 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		84F2FE7017402DEC001B7683 /* KrakenKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KrakenKitTests-Prefix.pch"; sourceTree = "<group>"; };
+		84F2FE74174045CE001B7683 /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = ../External/Expecta/Expecta.xcodeproj; sourceTree = "<group>"; };
+		84F2FE83174045D1001B7683 /* Specta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Specta.xcodeproj; path = ../External/Specta/Specta.xcodeproj; sourceTree = "<group>"; };
+		84F2FEC517404640001B7683 /* libExpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-iOS.a"; path = "../External/Mantle/MantleTests/expecta/build/Release-iphoneos/libExpecta-iOS.a"; sourceTree = "<group>"; };
+		84F2FECC174046B9001B7683 /* KRAUserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAUserSpec.m; sourceTree = "<group>"; };
+		84F2FED717404BC8001B7683 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		84F2FEDA17404C3C001B7683 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849E8FFF174D8915005FAB56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849E906B174D8C83005FAB56 /* SystemConfiguration.framework in Frameworks */,
+				849E9053174D8AC0005FAB56 /* Mantle.framework in Frameworks */,
+				849E9050174D8AA0005FAB56 /* CoreServices.framework in Frameworks */,
+				849E904E174D8A95005FAB56 /* Security.framework in Frameworks */,
+				849E9005174D8915005FAB56 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ADF9D016ADA7C60026F990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F2FED817404BC8001B7683 /* Security.framework in Frameworks */,
+				84F2FE4A174029C6001B7683 /* MobileCoreServices.framework in Frameworks */,
+				84F2FE48174029C1001B7683 /* SystemConfiguration.framework in Frameworks */,
+				84F2FE46174028DD001B7683 /* libMantle.a in Frameworks */,
+				84ADF9D716ADA7C60026F990 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F2FE5D17402DEC001B7683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849E9082174D8EDE005FAB56 /* libExpecta.a in Frameworks */,
+				849E9080174D8EDE005FAB56 /* libSpecta.a in Frameworks */,
+				849E907B174D8EA9005FAB56 /* CoreServices.framework in Frameworks */,
+				849E907A174D8EA2005FAB56 /* SystemConfiguration.framework in Frameworks */,
+				84F2FED917404BEE001B7683 /* Security.framework in Frameworks */,
+				84F2FE6317402DEC001B7683 /* SenTestingKit.framework in Frameworks */,
+				849E9079174D8E47005FAB56 /* KrakenKit.framework in Frameworks */,
+				84F2FE6617402DEC001B7683 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844001E01768E84000D747B9 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				844001E31768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h */,
+				844001E41768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m */,
+				844001E51768E84000D747B9 /* KRAClient+KRASearch.h */,
+				844001E61768E84000D747B9 /* KRAClient+KRASearch.m */,
+				844001E71768E84000D747B9 /* KRAClient+KRAUser.h */,
+				844001E81768E84000D747B9 /* KRAClient+KRAUser.m */,
+				844001E91768E84000D747B9 /* KRAClient.h */,
+				844001EA1768E84000D747B9 /* KRAClient.m */,
+				844001EB1768E84000D747B9 /* KRAComment.h */,
+				844001EC1768E84000D747B9 /* KRAComment.m */,
+				844001ED1768E84000D747B9 /* KRACommit.h */,
+				844001EE1768E84000D747B9 /* KRACommit.m */,
+				844001EF1768E84000D747B9 /* KRAEvent.h */,
+				844001F01768E84000D747B9 /* KRAEvent.m */,
+				844001F11768E84000D747B9 /* KRAEventPayload.h */,
+				844001F21768E84000D747B9 /* KRAEventPayload.m */,
+				844001F31768E84000D747B9 /* KRAIssue.h */,
+				844001F41768E84000D747B9 /* KRAIssue.m */,
+				844001F51768E84000D747B9 /* KRAIssueLabel.h */,
+				844001F61768E84000D747B9 /* KRAIssueLabel.m */,
+				844001F71768E84000D747B9 /* KrakenKit.h */,
+				844001F81768E84000D747B9 /* KRANotification.h */,
+				844001F91768E84000D747B9 /* KRANotification.m */,
+				844001FA1768E84000D747B9 /* KRAPullRequest.h */,
+				844001FB1768E84000D747B9 /* KRAPullRequest.m */,
+				844001FC1768E84000D747B9 /* KRARepository.h */,
+				844001FD1768E84000D747B9 /* KRARepository.m */,
+				844001FE1768E84000D747B9 /* KRATypes.h */,
+				844001FF1768E84000D747B9 /* KRATypes.m */,
+				844002001768E84000D747B9 /* KRAUser.h */,
+				844002011768E84000D747B9 /* KRAUser.m */,
+			);
+			name = objc;
+			path = ../../src/objc;
+			sourceTree = "<group>";
+		};
+		8440024D1768E84800D747B9 /* core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = core;
+			path = ../../src/core;
+			sourceTree = "<group>";
+		};
+		849E8FCA174D87E4005FAB56 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				849E8FCB174D87E4005FAB56 /* Base */,
+				849E8FD5174D87E4005FAB56 /* iOS */,
+				849E8FD9174D87E4005FAB56 /* Mac OS X */,
+				849E8FDF174D87E4005FAB56 /* README.md */,
+			);
+			path = Configuration;
+			sourceTree = SOURCE_ROOT;
+		};
+		849E8FCB174D87E4005FAB56 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				849E8FCC174D87E4005FAB56 /* Common.xcconfig */,
+				849E8FCD174D87E4005FAB56 /* Configurations */,
+				849E8FD2174D87E4005FAB56 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		849E8FCD174D87E4005FAB56 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				849E8FCE174D87E4005FAB56 /* Debug.xcconfig */,
+				849E8FCF174D87E4005FAB56 /* Profile.xcconfig */,
+				849E8FD0174D87E4005FAB56 /* Release.xcconfig */,
+				849E8FD1174D87E4005FAB56 /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		849E8FD2174D87E4005FAB56 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				849E8FD3174D87E4005FAB56 /* Application.xcconfig */,
+				849E8FD4174D87E4005FAB56 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		849E8FD5174D87E4005FAB56 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				849E8FD6174D87E4005FAB56 /* iOS-Application.xcconfig */,
+				849E8FD7174D87E4005FAB56 /* iOS-Base.xcconfig */,
+				849E8FD8174D87E4005FAB56 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		849E8FD9174D87E4005FAB56 /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				849E8FDA174D87E4005FAB56 /* Mac-Application.xcconfig */,
+				849E8FDB174D87E4005FAB56 /* Mac-Base.xcconfig */,
+				849E8FDC174D87E4005FAB56 /* Mac-DynamicLibrary.xcconfig */,
+				849E8FDD174D87E4005FAB56 /* Mac-Framework.xcconfig */,
+				849E8FDE174D87E4005FAB56 /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+		849E9006174D8915005FAB56 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849E9007174D8915005FAB56 /* AppKit.framework */,
+				849E9008174D8915005FAB56 /* CoreData.framework */,
+				849E9009174D8915005FAB56 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		84ADF9CA16ADA7C60026F990 = {
+			isa = PBXGroup;
+			children = (
+				84ADF9D816ADA7C60026F990 /* KrakenKit */,
+				84F2FE6717402DEC001B7683 /* KrakenKitTests */,
+				84ADF9D516ADA7C60026F990 /* Frameworks */,
+				84ADF9D416ADA7C60026F990 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84ADF9D416ADA7C60026F990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84ADF9D316ADA7C60026F990 /* libKrakenKit-iOS.a */,
+				84F2FE6117402DEC001B7683 /* KrakenKitTests.octest */,
+				849E9003174D8915005FAB56 /* KrakenKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84ADF9D516ADA7C60026F990 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849E906A174D8C83005FAB56 /* SystemConfiguration.framework */,
+				849E9054174D8ACE005FAB56 /* Foundation.framework */,
+				849E904F174D8AA0005FAB56 /* CoreServices.framework */,
+				849E904D174D8A95005FAB56 /* Security.framework */,
+				84F2FEDA17404C3C001B7683 /* UIKit.framework */,
+				84F2FED717404BC8001B7683 /* Security.framework */,
+				84F2FE49174029C6001B7683 /* MobileCoreServices.framework */,
+				84F2FE47174029C1001B7683 /* SystemConfiguration.framework */,
+				84ADF9D616ADA7C60026F990 /* Foundation.framework */,
+				849E9004174D8915005FAB56 /* Cocoa.framework */,
+				849E901A174D8915005FAB56 /* SenTestingKit.framework */,
+				849E9006174D8915005FAB56 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84ADF9D816ADA7C60026F990 /* KrakenKit */ = {
+			isa = PBXGroup;
+			children = (
+				844001E01768E84000D747B9 /* objc */,
+				8440024D1768E84800D747B9 /* core */,
+				84F2FEDD17404D3A001B7683 /* External */,
+				84ADF9D916ADA7C60026F990 /* Supporting Files */,
+			);
+			path = KrakenKit;
+			sourceTree = "<group>";
+		};
+		84ADF9D916ADA7C60026F990 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849E9056174D8B03005FAB56 /* InfoPlist.strings */,
+				849E9057174D8B04005FAB56 /* KrakenKit-Info.plist */,
+				849E9058174D8B04005FAB56 /* KrakenKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84DB046B173085A300674C99 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FE1E174028CE001B7683 /* AFHTTPClient.h */,
+				84F2FE1F174028CE001B7683 /* AFHTTPClient.m */,
+				84F2FE20174028CE001B7683 /* AFHTTPRequestOperation.h */,
+				84F2FE21174028CE001B7683 /* AFHTTPRequestOperation.m */,
+				84F2FE22174028CE001B7683 /* AFImageRequestOperation.h */,
+				84F2FE23174028CE001B7683 /* AFImageRequestOperation.m */,
+				84F2FE24174028CF001B7683 /* AFJSONRequestOperation.h */,
+				84F2FE25174028CF001B7683 /* AFJSONRequestOperation.m */,
+				84F2FE28174028CF001B7683 /* AFNetworking.h */,
+				84F2FE29174028CF001B7683 /* AFPropertyListRequestOperation.h */,
+				84F2FE2A174028CF001B7683 /* AFPropertyListRequestOperation.m */,
+				84F2FE2B174028CF001B7683 /* AFURLConnectionOperation.h */,
+				84F2FE2C174028CF001B7683 /* AFURLConnectionOperation.m */,
+				84F2FE2D174028CF001B7683 /* AFXMLRequestOperation.h */,
+				84F2FE2E174028CF001B7683 /* AFXMLRequestOperation.m */,
+				844002031768E84000D747B9 /* NSData+Base64.h */,
+				844002041768E84000D747B9 /* NSData+Base64.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		84F2FE0E1740287A001B7683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FE171740287A001B7683 /* Mantle.framework */,
+				84F2FE191740287A001B7683 /* Mantle Mac Tests.octest */,
+				84F2FE1B1740287A001B7683 /* libMantle.a */,
+				84F2FE1D1740287A001B7683 /* Mantle iOS Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F2FE5917402C70001B7683 /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */,
+			);
+			name = Mantle;
+			sourceTree = "<group>";
+		};
+		84F2FE6717402DEC001B7683 /* KrakenKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FECC174046B9001B7683 /* KRAUserSpec.m */,
+				849E8F7F1749D7B2005FAB56 /* KRAEventSpec.m */,
+				84774A8A1745974C00CA311B /* KRAClientSpec.m */,
+				84F2FEC31740462A001B7683 /* External */,
+				84F2FE6817402DEC001B7683 /* Supporting Files */,
+			);
+			path = KrakenKitTests;
+			sourceTree = "<group>";
+		};
+		84F2FE6817402DEC001B7683 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FE6217402DEC001B7683 /* SenTestingKit.framework */,
+				84F2FEC517404640001B7683 /* libExpecta-iOS.a */,
+				849E9081174D8EDE005FAB56 /* libExpecta.a */,
+				849E9070174D8DD7005FAB56 /* InfoPlist.strings */,
+				849E9071174D8DD7005FAB56 /* KrakenKitTests-Info.plist */,
+				84F2FE7017402DEC001B7683 /* KrakenKitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F2FE92174045D8001B7683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FE99174045D8001B7683 /* libExpecta.a */,
+				84F2FE9B174045D8001B7683 /* libExpecta-iOS.a */,
+				84F2FE9D174045D8001B7683 /* ExpectaTests.octest */,
+				84F2FE9F174045D8001B7683 /* Expecta-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F2FEB317404614001B7683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FEBA17404614001B7683 /* libSpecta.a */,
+				84F2FEBC17404614001B7683 /* libSpecta-iOS.a */,
+				84F2FEBE17404614001B7683 /* SpectaTests.octest */,
+				84F2FEC017404614001B7683 /* Specta-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F2FEC31740462A001B7683 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				84F2FE74174045CE001B7683 /* Expecta.xcodeproj */,
+				84F2FE83174045D1001B7683 /* Specta.xcodeproj */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		84F2FEDC17404D2E001B7683 /* FXKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				844001E11768E84000D747B9 /* FXKeychain.h */,
+				844001E21768E84000D747B9 /* FXKeychain.m */,
+			);
+			name = FXKeychain;
+			sourceTree = "<group>";
+		};
+		84F2FEDD17404D3A001B7683 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				844002021768E84000D747B9 /* metamacros.h */,
+				849E8FCA174D87E4005FAB56 /* Configuration */,
+				84F2FEDC17404D2E001B7683 /* FXKeychain */,
+				84F2FE5917402C70001B7683 /* Mantle */,
+				84DB046B173085A300674C99 /* AFNetworking */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		849E9000174D8915005FAB56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844002431768E84000D747B9 /* KRAUser.h in Headers */,
+				844002291768E84000D747B9 /* KRAIssue.h in Headers */,
+				8440021D1768E84000D747B9 /* KRACommit.h in Headers */,
+				844002211768E84000D747B9 /* KRAEvent.h in Headers */,
+				8440023B1768E84000D747B9 /* KRARepository.h in Headers */,
+				844002471768E84000D747B9 /* metamacros.h in Headers */,
+				844002151768E84000D747B9 /* KRAClient.h in Headers */,
+				844002251768E84000D747B9 /* KRAEventPayload.h in Headers */,
+				844002051768E84000D747B9 /* FXKeychain.h in Headers */,
+				844002191768E84000D747B9 /* KRAComment.h in Headers */,
+				844002091768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h in Headers */,
+				8440023F1768E84000D747B9 /* KRATypes.h in Headers */,
+				844002491768E84000D747B9 /* NSData+Base64.h in Headers */,
+				844002331768E84000D747B9 /* KRANotification.h in Headers */,
+				844002371768E84000D747B9 /* KRAPullRequest.h in Headers */,
+				844002311768E84000D747B9 /* KrakenKit.h in Headers */,
+				8440022D1768E84000D747B9 /* KRAIssueLabel.h in Headers */,
+				8440020D1768E84000D747B9 /* KRAClient+KRASearch.h in Headers */,
+				844002111768E84000D747B9 /* KRAClient+KRAUser.h in Headers */,
+				84C4542517503EF9001ECB0F /* AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ADFA1A16ADADA30026F990 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8440021E1768E84000D747B9 /* KRACommit.h in Headers */,
+				844002261768E84000D747B9 /* KRAEventPayload.h in Headers */,
+				844002481768E84000D747B9 /* metamacros.h in Headers */,
+				8440024A1768E84000D747B9 /* NSData+Base64.h in Headers */,
+				84F2FE31174028CF001B7683 /* AFHTTPClient.h in Headers */,
+				844002321768E84000D747B9 /* KrakenKit.h in Headers */,
+				8440022A1768E84000D747B9 /* KRAIssue.h in Headers */,
+				84F2FE33174028CF001B7683 /* AFHTTPRequestOperation.h in Headers */,
+				8440022E1768E84000D747B9 /* KRAIssueLabel.h in Headers */,
+				84F2FE35174028CF001B7683 /* AFImageRequestOperation.h in Headers */,
+				8440021A1768E84000D747B9 /* KRAComment.h in Headers */,
+				844002441768E84000D747B9 /* KRAUser.h in Headers */,
+				84F2FE37174028CF001B7683 /* AFJSONRequestOperation.h in Headers */,
+				844002341768E84000D747B9 /* KRANotification.h in Headers */,
+				8440020A1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h in Headers */,
+				84F2FE3B174028CF001B7683 /* AFNetworking.h in Headers */,
+				84F2FE3C174028CF001B7683 /* AFPropertyListRequestOperation.h in Headers */,
+				844002061768E84000D747B9 /* FXKeychain.h in Headers */,
+				844002221768E84000D747B9 /* KRAEvent.h in Headers */,
+				84F2FE3E174028CF001B7683 /* AFURLConnectionOperation.h in Headers */,
+				844002161768E84000D747B9 /* KRAClient.h in Headers */,
+				844002381768E84000D747B9 /* KRAPullRequest.h in Headers */,
+				8440020E1768E84000D747B9 /* KRAClient+KRASearch.h in Headers */,
+				84F2FE40174028CF001B7683 /* AFXMLRequestOperation.h in Headers */,
+				844002121768E84000D747B9 /* KRAClient+KRAUser.h in Headers */,
+				8440023C1768E84000D747B9 /* KRARepository.h in Headers */,
+				844002401768E84000D747B9 /* KRATypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		849E9002174D8915005FAB56 /* KrakenKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849E9029174D8915005FAB56 /* Build configuration list for PBXNativeTarget "KrakenKit" */;
+			buildPhases = (
+				849E8FFE174D8915005FAB56 /* Sources */,
+				849E8FFF174D8915005FAB56 /* Frameworks */,
+				849E9000174D8915005FAB56 /* Headers */,
+				849E9001174D8915005FAB56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849E9052174D8AB9005FAB56 /* PBXTargetDependency */,
+			);
+			name = KrakenKit;
+			productName = KrakenKit;
+			productReference = 849E9003174D8915005FAB56 /* KrakenKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84ADF9D216ADA7C60026F990 /* KrakenKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84ADF9E116ADA7C60026F990 /* Build configuration list for PBXNativeTarget "KrakenKit-iOS" */;
+			buildPhases = (
+				84ADF9CF16ADA7C60026F990 /* Sources */,
+				84ADF9D016ADA7C60026F990 /* Frameworks */,
+				84ADFA1A16ADADA30026F990 /* Headers */,
+				84ADF9D116ADA7C60026F990 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F2FE45174028D6001B7683 /* PBXTargetDependency */,
+			);
+			name = "KrakenKit-iOS";
+			productName = KrakenKit;
+			productReference = 84ADF9D316ADA7C60026F990 /* libKrakenKit-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		84F2FE6017402DEC001B7683 /* KrakenKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F2FE7117402DEC001B7683 /* Build configuration list for PBXNativeTarget "KrakenKitTests" */;
+			buildPhases = (
+				84F2FE5C17402DEC001B7683 /* Sources */,
+				84F2FE5D17402DEC001B7683 /* Frameworks */,
+				849E9075174D8E15005FAB56 /* CopyFiles */,
+				84F2FE5F17402DEC001B7683 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849E907D174D8EC9005FAB56 /* PBXTargetDependency */,
+				849E907F174D8EC9005FAB56 /* PBXTargetDependency */,
+				849E9078174D8E31005FAB56 /* PBXTargetDependency */,
+			);
+			name = KrakenKitTests;
+			productName = KrakenKitTests;
+			productReference = 84F2FE6117402DEC001B7683 /* KrakenKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84ADF9CB16ADA7C60026F990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KRA;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = CodaFi;
+			};
+			buildConfigurationList = 84ADF9CE16ADA7C60026F990 /* Build configuration list for PBXProject "KrakenKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84ADF9CA16ADA7C60026F990;
+			productRefGroup = 84ADF9D416ADA7C60026F990 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84F2FE92174045D8001B7683 /* Products */;
+					ProjectRef = 84F2FE74174045CE001B7683 /* Expecta.xcodeproj */;
+				},
+				{
+					ProductGroup = 84F2FE0E1740287A001B7683 /* Products */;
+					ProjectRef = 84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */;
+				},
+				{
+					ProductGroup = 84F2FEB317404614001B7683 /* Products */;
+					ProjectRef = 84F2FE83174045D1001B7683 /* Specta.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				849E9002174D8915005FAB56 /* KrakenKit */,
+				84ADF9D216ADA7C60026F990 /* KrakenKit-iOS */,
+				84F2FE6017402DEC001B7683 /* KrakenKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84F2FE171740287A001B7683 /* Mantle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Mantle.framework;
+			remoteRef = 84F2FE161740287A001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FE191740287A001B7683 /* Mantle Mac Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Mantle Mac Tests.octest";
+			remoteRef = 84F2FE181740287A001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FE1B1740287A001B7683 /* libMantle.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMantle.a;
+			remoteRef = 84F2FE1A1740287A001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FE1D1740287A001B7683 /* Mantle iOS Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Mantle iOS Tests.octest";
+			remoteRef = 84F2FE1C1740287A001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FE99174045D8001B7683 /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = 84F2FE98174045D8001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FE9B174045D8001B7683 /* libExpecta-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libExpecta-iOS.a";
+			remoteRef = 84F2FE9A174045D8001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FE9D174045D8001B7683 /* ExpectaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExpectaTests.octest;
+			remoteRef = 84F2FE9C174045D8001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FE9F174045D8001B7683 /* Expecta-iOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Expecta-iOSTests.octest";
+			remoteRef = 84F2FE9E174045D8001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FEBA17404614001B7683 /* libSpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpecta.a;
+			remoteRef = 84F2FEB917404614001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FEBC17404614001B7683 /* libSpecta-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSpecta-iOS.a";
+			remoteRef = 84F2FEBB17404614001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FEBE17404614001B7683 /* SpectaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpectaTests.octest;
+			remoteRef = 84F2FEBD17404614001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84F2FEC017404614001B7683 /* Specta-iOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Specta-iOSTests.octest";
+			remoteRef = 84F2FEBF17404614001B7683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849E9001174D8915005FAB56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F2FE5F17402DEC001B7683 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849E8FFE174D8915005FAB56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8440020B1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m in Sources */,
+				8440022F1768E84000D747B9 /* KRAIssueLabel.m in Sources */,
+				849E9045174D8A85005FAB56 /* AFHTTPClient.m in Sources */,
+				849E9046174D8A85005FAB56 /* AFHTTPRequestOperation.m in Sources */,
+				844002131768E84000D747B9 /* KRAClient+KRAUser.m in Sources */,
+				8440021B1768E84000D747B9 /* KRAComment.m in Sources */,
+				844002391768E84000D747B9 /* KRAPullRequest.m in Sources */,
+				8440020F1768E84000D747B9 /* KRAClient+KRASearch.m in Sources */,
+				849E9047174D8A85005FAB56 /* AFImageRequestOperation.m in Sources */,
+				849E9048174D8A85005FAB56 /* AFJSONRequestOperation.m in Sources */,
+				8440024B1768E84000D747B9 /* NSData+Base64.m in Sources */,
+				849E9049174D8A85005FAB56 /* AFPropertyListRequestOperation.m in Sources */,
+				8440022B1768E84000D747B9 /* KRAIssue.m in Sources */,
+				8440023D1768E84000D747B9 /* KRARepository.m in Sources */,
+				849E904A174D8A85005FAB56 /* AFURLConnectionOperation.m in Sources */,
+				844002231768E84000D747B9 /* KRAEvent.m in Sources */,
+				844002411768E84000D747B9 /* KRATypes.m in Sources */,
+				844002271768E84000D747B9 /* KRAEventPayload.m in Sources */,
+				849E904B174D8A85005FAB56 /* AFXMLRequestOperation.m in Sources */,
+				844002451768E84000D747B9 /* KRAUser.m in Sources */,
+				844002071768E84000D747B9 /* FXKeychain.m in Sources */,
+				844002351768E84000D747B9 /* KRANotification.m in Sources */,
+				844002171768E84000D747B9 /* KRAClient.m in Sources */,
+				8440025B1768EAAA00D747B9 /* KRACommit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ADF9CF16ADA7C60026F990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8440020C1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m in Sources */,
+				844002301768E84000D747B9 /* KRAIssueLabel.m in Sources */,
+				84F2FE32174028CF001B7683 /* AFHTTPClient.m in Sources */,
+				84F2FE34174028CF001B7683 /* AFHTTPRequestOperation.m in Sources */,
+				84F2FE36174028CF001B7683 /* AFImageRequestOperation.m in Sources */,
+				844002141768E84000D747B9 /* KRAClient+KRAUser.m in Sources */,
+				8440021C1768E84000D747B9 /* KRAComment.m in Sources */,
+				8440023A1768E84000D747B9 /* KRAPullRequest.m in Sources */,
+				844002101768E84000D747B9 /* KRAClient+KRASearch.m in Sources */,
+				84F2FE38174028CF001B7683 /* AFJSONRequestOperation.m in Sources */,
+				84F2FE3D174028CF001B7683 /* AFPropertyListRequestOperation.m in Sources */,
+				8440024C1768E84000D747B9 /* NSData+Base64.m in Sources */,
+				84F2FE3F174028CF001B7683 /* AFURLConnectionOperation.m in Sources */,
+				8440022C1768E84000D747B9 /* KRAIssue.m in Sources */,
+				8440023E1768E84000D747B9 /* KRARepository.m in Sources */,
+				84F2FE41174028CF001B7683 /* AFXMLRequestOperation.m in Sources */,
+				844002241768E84000D747B9 /* KRAEvent.m in Sources */,
+				844002421768E84000D747B9 /* KRATypes.m in Sources */,
+				844002281768E84000D747B9 /* KRAEventPayload.m in Sources */,
+				844002201768E84000D747B9 /* KRACommit.m in Sources */,
+				844002461768E84000D747B9 /* KRAUser.m in Sources */,
+				844002081768E84000D747B9 /* FXKeychain.m in Sources */,
+				844002361768E84000D747B9 /* KRANotification.m in Sources */,
+				844002181768E84000D747B9 /* KRAClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F2FE5C17402DEC001B7683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F2FECD174046B9001B7683 /* KRAUserSpec.m in Sources */,
+				84774A8B1745974C00CA311B /* KRAClientSpec.m in Sources */,
+				849E8F801749D7B2005FAB56 /* KRAEventSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		849E9052174D8AB9005FAB56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mantle Mac";
+			targetProxy = 849E9051174D8AB9005FAB56 /* PBXContainerItemProxy */;
+		};
+		849E9078174D8E31005FAB56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849E9002174D8915005FAB56 /* KrakenKit */;
+			targetProxy = 849E9077174D8E31005FAB56 /* PBXContainerItemProxy */;
+		};
+		849E907D174D8EC9005FAB56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Expecta;
+			targetProxy = 849E907C174D8EC9005FAB56 /* PBXContainerItemProxy */;
+		};
+		849E907F174D8EC9005FAB56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Specta;
+			targetProxy = 849E907E174D8EC9005FAB56 /* PBXContainerItemProxy */;
+		};
+		84F2FE45174028D6001B7683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mantle iOS";
+			targetProxy = 84F2FE44174028D6001B7683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		849E8FFB174D88EA005FAB56 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FD1174D87E4005FAB56 /* Test.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Test;
+		};
+		849E8FFC174D88EA005FAB56 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FD8174D87E4005FAB56 /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/KrakenKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle\"";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Test;
+		};
+		849E8FFD174D88EA005FAB56 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FDA174D87E4005FAB56 /* Mac-Application.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKitTests/KrakenKitTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/External/Expecta/src/**",
+					"$(SRCROOT)/External/Specta/src/**",
+					"\"$(SRCROOT)/KrakenKit\"",
+					"\"$(SRCROOT)/External/Mantle/Mantle\"",
+				);
+				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Test;
+		};
+		849E902A174D8915005FAB56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FDD174D87E4005FAB56 /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "KrakenKit/KrakenKit-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		849E902B174D8915005FAB56 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FDD174D87E4005FAB56 /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "KrakenKit/KrakenKit-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Test;
+		};
+		849E902C174D8915005FAB56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FDD174D87E4005FAB56 /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "KrakenKit/KrakenKit-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		849E9031174D896D005FAB56 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FCF174D87E4005FAB56 /* Profile.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		849E9032174D896D005FAB56 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FDD174D87E4005FAB56 /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "KrakenKit/KrakenKit-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Profile;
+		};
+		849E9033174D896D005FAB56 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FD8174D87E4005FAB56 /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/KrakenKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle\"";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Profile;
+		};
+		849E9034174D896D005FAB56 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FDA174D87E4005FAB56 /* Mac-Application.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKitTests/KrakenKitTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/External/Expecta/src/**",
+					"$(SRCROOT)/External/Specta/src/**",
+					"\"$(SRCROOT)/KrakenKit\"",
+					"\"$(SRCROOT)/External/Mantle/Mantle\"",
+				);
+				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Profile;
+		};
+		84ADF9DF16ADA7C60026F990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FCE174D87E4005FAB56 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84ADF9E016ADA7C60026F990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FD0174D87E4005FAB56 /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84ADF9E216ADA7C60026F990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FD8174D87E4005FAB56 /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/KrakenKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle\"";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84ADF9E316ADA7C60026F990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FD8174D87E4005FAB56 /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/KrakenKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle\"";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84F2FE7217402DEC001B7683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FDA174D87E4005FAB56 /* Mac-Application.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKitTests/KrakenKitTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/External/Expecta/src/**",
+					"$(SRCROOT)/External/Specta/src/**",
+					"\"$(SRCROOT)/KrakenKit\"",
+					"\"$(SRCROOT)/External/Mantle/Mantle\"",
+				);
+				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		84F2FE7317402DEC001B7683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849E8FDA174D87E4005FAB56 /* Mac-Application.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrakenKitTests/KrakenKitTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/External/Expecta/src/**",
+					"$(SRCROOT)/External/Specta/src/**",
+					"\"$(SRCROOT)/KrakenKit\"",
+					"\"$(SRCROOT)/External/Mantle/Mantle\"",
+				);
+				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849E9029174D8915005FAB56 /* Build configuration list for PBXNativeTarget "KrakenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849E902A174D8915005FAB56 /* Debug */,
+				849E902B174D8915005FAB56 /* Test */,
+				849E902C174D8915005FAB56 /* Release */,
+				849E9032174D896D005FAB56 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84ADF9CE16ADA7C60026F990 /* Build configuration list for PBXProject "KrakenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ADF9DF16ADA7C60026F990 /* Debug */,
+				849E8FFB174D88EA005FAB56 /* Test */,
+				84ADF9E016ADA7C60026F990 /* Release */,
+				849E9031174D896D005FAB56 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84ADF9E116ADA7C60026F990 /* Build configuration list for PBXNativeTarget "KrakenKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ADF9E216ADA7C60026F990 /* Debug */,
+				849E8FFC174D88EA005FAB56 /* Test */,
+				84ADF9E316ADA7C60026F990 /* Release */,
+				849E9033174D896D005FAB56 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F2FE7117402DEC001B7683 /* Build configuration list for PBXNativeTarget "KrakenKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F2FE7217402DEC001B7683 /* Debug */,
+				849E8FFD174D88EA005FAB56 /* Test */,
+				84F2FE7317402DEC001B7683 /* Release */,
+				849E9034174D896D005FAB56 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84ADF9CB16ADA7C60026F990 /* Project object */;
+}
