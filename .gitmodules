@@ -7,3 +7,6 @@
 [submodule "build-mac/External/AFNetworking"]
 	path = build-mac/External/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "src/extern/libjsonz"]
+	path = src/extern/libjsonz
+	url = git@github.com:H2CO3/libjsonz.git
