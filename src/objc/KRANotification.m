@@ -74,6 +74,10 @@
     }];
 }
 
+- (void)setNilValueForKey:(NSString *)key {
+	if ([key isEqualToString:@"reason"]) return;
+	[super setNilValueForKey:key];
+}
 
 @end
 
