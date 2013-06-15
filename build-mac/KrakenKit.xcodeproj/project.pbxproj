@@ -83,6 +83,10 @@
 		8442BBC9176D221F00F27E4D /* Serializable_Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442BBC6176D221F00F27E4D /* Serializable_Object.cpp */; };
 		8442BBCA176D221F00F27E4D /* Serializable_Object.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442BBC7176D221F00F27E4D /* Serializable_Object.h */; };
 		8442BBCB176D221F00F27E4D /* Serializable_Object.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442BBC7176D221F00F27E4D /* Serializable_Object.h */; };
+		8442BBCF176D22B400F27E4D /* JSONAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442BBCD176D22B400F27E4D /* JSONAdapter.cpp */; };
+		8442BBD0176D22B400F27E4D /* JSONAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442BBCD176D22B400F27E4D /* JSONAdapter.cpp */; };
+		8442BBD1176D22B400F27E4D /* JSONAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442BBCE176D22B400F27E4D /* JSONAdapter.h */; };
+		8442BBD2176D22B400F27E4D /* JSONAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442BBCE176D22B400F27E4D /* JSONAdapter.h */; };
 		84774A8B1745974C00CA311B /* KRAClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 84774A8A1745974C00CA311B /* KRAClientSpec.m */; };
 		849E8F801749D7B2005FAB56 /* KRAEventSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E8F7F1749D7B2005FAB56 /* KRAEventSpec.m */; };
 		849E9005174D8915005FAB56 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E9004174D8915005FAB56 /* Cocoa.framework */; };
@@ -313,6 +317,8 @@
 		844002041768E84000D747B9 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "../../src/objc/NSData+Base64.m"; sourceTree = "<group>"; };
 		8442BBC6176D221F00F27E4D /* Serializable_Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Serializable_Object.cpp; path = ../../src/cpp/Serializable_Object.cpp; sourceTree = "<group>"; };
 		8442BBC7176D221F00F27E4D /* Serializable_Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Serializable_Object.h; path = ../../src/cpp/Serializable_Object.h; sourceTree = "<group>"; };
+		8442BBCD176D22B400F27E4D /* JSONAdapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JSONAdapter.cpp; path = ../../src/cpp/JSONAdapter.cpp; sourceTree = "<group>"; };
+		8442BBCE176D22B400F27E4D /* JSONAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONAdapter.h; path = ../../src/cpp/JSONAdapter.h; sourceTree = "<group>"; };
 		84774A8A1745974C00CA311B /* KRAClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAClientSpec.m; sourceTree = "<group>"; };
 		849E8F7F1749D7B2005FAB56 /* KRAEventSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAEventSpec.m; sourceTree = "<group>"; };
 		849E8FCC174D87E4005FAB56 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -465,6 +471,8 @@
 			children = (
 				8442BBC6176D221F00F27E4D /* Serializable_Object.cpp */,
 				8442BBC7176D221F00F27E4D /* Serializable_Object.h */,
+				8442BBCD176D22B400F27E4D /* JSONAdapter.cpp */,
+				8442BBCE176D22B400F27E4D /* JSONAdapter.h */,
 			);
 			name = cpp;
 			sourceTree = "<group>";
@@ -729,6 +737,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8442BBD1176D22B400F27E4D /* JSONAdapter.h in Headers */,
 				844002431768E84000D747B9 /* KRAUser.h in Headers */,
 				844002291768E84000D747B9 /* KRAIssue.h in Headers */,
 				8440021D1768E84000D747B9 /* KRACommit.h in Headers */,
@@ -783,6 +792,7 @@
 				8440020E1768E84000D747B9 /* KRAClient+KRASearch.h in Headers */,
 				84F2FE40174028CF001B7683 /* AFXMLRequestOperation.h in Headers */,
 				844002121768E84000D747B9 /* KRAClient+KRAUser.h in Headers */,
+				8442BBD2176D22B400F27E4D /* JSONAdapter.h in Headers */,
 				8440023C1768E84000D747B9 /* KRARepository.h in Headers */,
 				844002401768E84000D747B9 /* KRATypes.h in Headers */,
 			);
@@ -1014,6 +1024,7 @@
 				8440020B1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m in Sources */,
 				8440022F1768E84000D747B9 /* KRAIssueLabel.m in Sources */,
 				849E9045174D8A85005FAB56 /* AFHTTPClient.m in Sources */,
+				8442BBCF176D22B400F27E4D /* JSONAdapter.cpp in Sources */,
 				849E9046174D8A85005FAB56 /* AFHTTPRequestOperation.m in Sources */,
 				844002131768E84000D747B9 /* KRAClient+KRAUser.m in Sources */,
 				8440021B1768E84000D747B9 /* KRAComment.m in Sources */,
@@ -1046,6 +1057,7 @@
 				8440020C1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m in Sources */,
 				844002301768E84000D747B9 /* KRAIssueLabel.m in Sources */,
 				84F2FE32174028CF001B7683 /* AFHTTPClient.m in Sources */,
+				8442BBD0176D22B400F27E4D /* JSONAdapter.cpp in Sources */,
 				84F2FE34174028CF001B7683 /* AFHTTPRequestOperation.m in Sources */,
 				84F2FE36174028CF001B7683 /* AFImageRequestOperation.m in Sources */,
 				844002141768E84000D747B9 /* KRAClient+KRAUser.m in Sources */,
