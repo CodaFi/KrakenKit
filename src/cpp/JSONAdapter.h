@@ -17,7 +17,7 @@ namespace KrakenKit {
 	class JSONAdapter {
 	public:
 		Serializable_Object model();
-		static Serializable_Object modelFromJSONDictionary<class T>(std::map &JSON);
+		static Serializable_Object modelFromJSONDictionary(std::map<char *, void *> &JSON);
 		
 	private:
 		Serializable_Object mModel;
