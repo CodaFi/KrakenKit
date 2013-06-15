@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 CodaFi. All rights reserved.
 //
 
-#import <KrakenKit/KrakenKit.h>
+#import "KRAClient.h"
 
 @interface KRAClient (KRASearch)
 
