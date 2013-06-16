@@ -8,6 +8,8 @@
 
 #import "KRAClient.h"
 
+@class KRARepository;
+
 @interface KRAClient (KRAUser)
 
 - (void)fetchUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
@@ -20,5 +22,8 @@
 - (void)notificationsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
 
 - (void)starredRepositoriesForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
+
+- (void)starRepository:(KRARepository *)repo completion:(KRAClientCompletionBlock)completionHandler;
+- (void)unstarRepository:(KRARepository *)repo completion:(KRAClientCompletionBlock)completionHandler;
 
 @end

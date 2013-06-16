@@ -26,6 +26,7 @@ typedef NS_ENUM(int, KRAGithubActionType) {
 @property (nonatomic, copy) NSNumber *size;
 @property (nonatomic, copy) NSNumber *distinctSize;
 @property (nonatomic, copy) NSString *ref;
+@property (nonatomic, copy) NSString *refType;
 @property (nonatomic, copy) NSString *head;
 @property (nonatomic, copy) NSString *before;
 

@@ -64,4 +64,18 @@
 		  failure:NULL];
 }
 
+- (void)starRepository:(KRARepository *)repo completion:(KRAClientCompletionBlock)completionHandler {
+	[self postPath:[NSString stringWithFormat:@"user/starred/%@", repo.fullName]
+		parameters:nil
+		   success:completionHandler
+		   failure:NULL];
+}
+
+- (void)unstarRepository:(KRARepository *)repo completion:(KRAClientCompletionBlock)completionHandler {
+	[self deletePath:[NSString stringWithFormat:@"user/starred/%@", repo.fullName]
+		parameters:nil
+		   success:completionHandler
+		   failure:NULL];
+}
+
 @end

@@ -23,6 +23,7 @@
 		@"size" : @"size",
 		@"distinctSize" : @"distinct_size",
 		@"ref" : @"ref",
+		@"refType" : @"ref_type",
 		@"head" : @"head",
 		@"before" : @"before",
 		@"commits" : @"commits",
