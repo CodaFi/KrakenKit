@@ -109,6 +109,10 @@
 		849E9082174D8EDE005FAB56 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E9081174D8EDE005FAB56 /* libExpecta.a */; };
 		84ADF9D716ADA7C60026F990 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADF9D616ADA7C60026F990 /* Foundation.framework */; };
 		84C4542517503EF9001ECB0F /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE28174028CF001B7683 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EECFA7176E893A00AA826F /* KRAClient+KRARepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EECFA5176E893A00AA826F /* KRAClient+KRARepository.h */; };
+		84EECFA8176E893A00AA826F /* KRAClient+KRARepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EECFA5176E893A00AA826F /* KRAClient+KRARepository.h */; };
+		84EECFA9176E893A00AA826F /* KRAClient+KRARepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EECFA6176E893A00AA826F /* KRAClient+KRARepository.m */; };
+		84EECFAA176E893A00AA826F /* KRAClient+KRARepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EECFA6176E893A00AA826F /* KRAClient+KRARepository.m */; };
 		84F2FE31174028CF001B7683 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE1E174028CE001B7683 /* AFHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84F2FE32174028CF001B7683 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE1F174028CE001B7683 /* AFHTTPClient.m */; };
 		84F2FE33174028CF001B7683 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE20174028CE001B7683 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -355,6 +359,8 @@
 		849E9081174D8EDE005FAB56 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = ../External/Mantle/MantleTests/expecta/build/Release/libExpecta.a; sourceTree = "<group>"; };
 		84ADF9D316ADA7C60026F990 /* libKrakenKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKrakenKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ADF9D616ADA7C60026F990 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84EECFA5176E893A00AA826F /* KRAClient+KRARepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KRAClient+KRARepository.h"; sourceTree = "<group>"; };
+		84EECFA6176E893A00AA826F /* KRAClient+KRARepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KRAClient+KRARepository.m"; sourceTree = "<group>"; };
 		84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = External/Mantle/Mantle.xcodeproj; sourceTree = SOURCE_ROOT; };
 		84F2FE1E174028CE001B7683 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = External/AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
 		84F2FE1F174028CE001B7683 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = External/AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
@@ -436,6 +442,8 @@
 				844001E61768E84000D747B9 /* KRAClient+KRASearch.m */,
 				844001E71768E84000D747B9 /* KRAClient+KRAUser.h */,
 				844001E81768E84000D747B9 /* KRAClient+KRAUser.m */,
+				84EECFA5176E893A00AA826F /* KRAClient+KRARepository.h */,
+				84EECFA6176E893A00AA826F /* KRAClient+KRARepository.m */,
 				844001E91768E84000D747B9 /* KRAClient.h */,
 				844001EA1768E84000D747B9 /* KRAClient.m */,
 				844001EB1768E84000D747B9 /* KRAComment.h */,
@@ -746,6 +754,7 @@
 				844002471768E84000D747B9 /* metamacros.h in Headers */,
 				844002151768E84000D747B9 /* KRAClient.h in Headers */,
 				844002251768E84000D747B9 /* KRAEventPayload.h in Headers */,
+				84EECFA7176E893A00AA826F /* KRAClient+KRARepository.h in Headers */,
 				844002051768E84000D747B9 /* FXKeychain.h in Headers */,
 				844002191768E84000D747B9 /* KRAComment.h in Headers */,
 				844002091768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h in Headers */,
@@ -777,6 +786,7 @@
 				8440022E1768E84000D747B9 /* KRAIssueLabel.h in Headers */,
 				84F2FE35174028CF001B7683 /* AFImageRequestOperation.h in Headers */,
 				8440021A1768E84000D747B9 /* KRAComment.h in Headers */,
+				84EECFA8176E893A00AA826F /* KRAClient+KRARepository.h in Headers */,
 				844002441768E84000D747B9 /* KRAUser.h in Headers */,
 				84F2FE37174028CF001B7683 /* AFJSONRequestOperation.h in Headers */,
 				844002341768E84000D747B9 /* KRANotification.h in Headers */,
@@ -1035,6 +1045,7 @@
 				8440024B1768E84000D747B9 /* NSData+Base64.m in Sources */,
 				849E9049174D8A85005FAB56 /* AFPropertyListRequestOperation.m in Sources */,
 				8440022B1768E84000D747B9 /* KRAIssue.m in Sources */,
+				84EECFA9176E893A00AA826F /* KRAClient+KRARepository.m in Sources */,
 				8440023D1768E84000D747B9 /* KRARepository.m in Sources */,
 				849E904A174D8A85005FAB56 /* AFURLConnectionOperation.m in Sources */,
 				844002231768E84000D747B9 /* KRAEvent.m in Sources */,
@@ -1068,6 +1079,7 @@
 				84F2FE3D174028CF001B7683 /* AFPropertyListRequestOperation.m in Sources */,
 				8440024C1768E84000D747B9 /* NSData+Base64.m in Sources */,
 				84F2FE3F174028CF001B7683 /* AFURLConnectionOperation.m in Sources */,
+				84EECFAA176E893A00AA826F /* KRAClient+KRARepository.m in Sources */,
 				8440022C1768E84000D747B9 /* KRAIssue.m in Sources */,
 				8440023E1768E84000D747B9 /* KRARepository.m in Sources */,
 				84F2FE41174028CF001B7683 /* AFXMLRequestOperation.m in Sources */,

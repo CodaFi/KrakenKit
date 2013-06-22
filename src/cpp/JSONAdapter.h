@@ -12,11 +12,11 @@
 #include <iostream>
 #include "Serializable_Object.h"
 
-
 namespace KrakenKit {
 	class JSONAdapter {
 	public:
 		Serializable_Object model();
+		Serializable_Object modelWithJSONDictionary(std::map<char *, void *> &JSON);
 		static Serializable_Object modelFromJSONDictionary(std::map<char *, void *> &JSON);
 		
 	private:
