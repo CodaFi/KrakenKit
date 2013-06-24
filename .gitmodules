@@ -7,3 +7,6 @@
 [submodule "build-mac/Configuration"]
 	path = build-mac/Configuration
 	url = https://github.com/jspahrsummers/xcconfigs.git
+[submodule "src/extern/libjsonz"]
+	path = src/extern/libjsonz
+	url = git@github.com:H2CO3/libjsonz.git
