@@ -1,6 +1,3 @@
-[submodule "src/extern/libjsonz"]
-	path = src/extern/libjsonz
-	url = git@github.com:H2CO3/libjsonz.git
 [submodule "build-mac/External/Mantle"]
 	path = build-mac/External/Mantle
 	url = https://github.com/github/Mantle.git
