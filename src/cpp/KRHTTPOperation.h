@@ -40,9 +40,9 @@ namespace KrakenKit {
 		Error mError;
 		
 	private:
-		static size_t HeaderFunction(char *data, size_t size, size_t nmemb, void *userdata);
+//		static size_t HeaderFunction(char *data, size_t size, size_t count, void *context);
         static size_t KRFWrite(const char *data, size_t size, size_t count, void *context);
-        static size_t DebugFunction(curl_infotype type, char *data, size_t size, void *userdata);
+//        static size_t DebugFunction(curl_infotype type, char *data, size_t size, void *context);
 	};
 }
 
