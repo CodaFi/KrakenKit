@@ -1350,16 +1350,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKitTests/KrakenKitTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/External/Expecta/src/**",
-					"$(SRCROOT)/External/Specta/src/**",
 					"\"$(SRCROOT)/KrakenKit\"",
 					"\"$(SRCROOT)/External/Mantle/Mantle\"",
+					"\"$(SRCROOT)/External/Specta/src\"/**",
+					"\"$(SRCROOT)/External/Expecta/src\"/**",
 				);
 				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/KrakenKit\\\"",
-					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\\\" $(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -1524,16 +1521,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKitTests/KrakenKitTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/External/Expecta/src/**",
-					"$(SRCROOT)/External/Specta/src/**",
 					"\"$(SRCROOT)/KrakenKit\"",
 					"\"$(SRCROOT)/External/Mantle/Mantle\"",
+					"\"$(SRCROOT)/External/Specta/src\"/**",
+					"\"$(SRCROOT)/External/Expecta/src\"/**",
 				);
 				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/KrakenKit\\\"",
-					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\\\" $(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -1637,16 +1631,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKitTests/KrakenKitTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/External/Expecta/src/**",
-					"$(SRCROOT)/External/Specta/src/**",
 					"\"$(SRCROOT)/KrakenKit\"",
 					"\"$(SRCROOT)/External/Mantle/Mantle\"",
+					"\"$(SRCROOT)/External/Specta/src\"/**",
+					"\"$(SRCROOT)/External/Expecta/src\"/**",
 				);
 				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/KrakenKit\\\"",
-					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\\\" $(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -1665,16 +1656,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKitTests/KrakenKitTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/External/Expecta/src/**",
-					"$(SRCROOT)/External/Specta/src/**",
 					"\"$(SRCROOT)/KrakenKit\"",
 					"\"$(SRCROOT)/External/Mantle/Mantle\"",
+					"\"$(SRCROOT)/External/Specta/src\"/**",
+					"\"$(SRCROOT)/External/Expecta/src\"/**",
 				);
 				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/KrakenKit\\\"",
-					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\\\" $(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
