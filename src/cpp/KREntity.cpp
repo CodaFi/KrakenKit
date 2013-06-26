@@ -11,3 +11,18 @@
 
 using namespace KrakenKit;
 
+Entity::Entity() {
+	AuthenticatedObject();
+}
+
+AuthenticatedObject *Entity::deserialize(jsonz_object_t *object) {
+	Entity *entity = new Entity();
+	
+	std::string avatarURL = (char *)jsonz_dict_get(object, "avatar_url");
+	unsigned long diskUsage = *(unsigned long *)jsonz_dict_get(object, "disk_usage");
+	
+	entity->setAvatarURL(avatarURL);
+	entity->setDiskUsage(diskUsage);
+	
+	return entity;
+}

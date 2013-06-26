@@ -14,6 +14,7 @@ AuthenticatedObject::AuthenticatedObject() {
 	mServer = *Server::DotComServer();
 }
 
-AuthenticatedObject AuthenticatedObject::deserialize(jsonz_object_t *object) {
-	return AuthenticatedObject();
+AuthenticatedObject *AuthenticatedObject::deserialize(jsonz_object_t *object) {
+	KRAssert(object != NULL);
+	return new AuthenticatedObject();
 }
