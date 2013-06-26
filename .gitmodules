@@ -10,3 +10,9 @@
 [submodule "src/extern/libjsonz"]
 	path = src/extern/libjsonz
 	url = git@github.com:H2CO3/libjsonz.git
+[submodule "build-mac/External/Specta"]
+	path = build-mac/External/Specta
+	url = https://github.com/petejkim/specta.git
+[submodule "build-mac/External/Expecta"]
+	path = build-mac/External/Expecta
+	url = https://github.com/petejkim/expecta.git

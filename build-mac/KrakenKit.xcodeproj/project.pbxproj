@@ -130,6 +130,8 @@
 		8442D983177A9D55003F9A1F /* KRServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D980177A9D55003F9A1F /* KRServer.cpp */; };
 		8442D984177A9D55003F9A1F /* KRServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D981177A9D55003F9A1F /* KRServer.h */; };
 		8442D985177A9D55003F9A1F /* KRServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D981177A9D55003F9A1F /* KRServer.h */; };
+		8442D990177AA73A003F9A1F /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FE99174045D8001B7683 /* libExpecta.a */; };
+		8442D992177AA73A003F9A1F /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442D991177AA73A003F9A1F /* libSpecta.a */; };
 		84774A8B1745974C00CA311B /* KRAClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 84774A8A1745974C00CA311B /* KRAClientSpec.m */; };
 		849E8F801749D7B2005FAB56 /* KRAEventSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 849E8F7F1749D7B2005FAB56 /* KRAEventSpec.m */; };
 		849E9005174D8915005FAB56 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E9004174D8915005FAB56 /* Cocoa.framework */; };
@@ -148,8 +150,6 @@
 		849E9079174D8E47005FAB56 /* KrakenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E9003174D8915005FAB56 /* KrakenKit.framework */; };
 		849E907A174D8EA2005FAB56 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E906A174D8C83005FAB56 /* SystemConfiguration.framework */; };
 		849E907B174D8EA9005FAB56 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E904F174D8AA0005FAB56 /* CoreServices.framework */; };
-		849E9080174D8EDE005FAB56 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FEBA17404614001B7683 /* libSpecta.a */; };
-		849E9082174D8EDE005FAB56 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E9081174D8EDE005FAB56 /* libExpecta.a */; };
 		84ADF9D716ADA7C60026F990 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADF9D616ADA7C60026F990 /* Foundation.framework */; };
 		84C4542517503EF9001ECB0F /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE28174028CF001B7683 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84F2FE31174028CF001B7683 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE1E174028CE001B7683 /* AFHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -178,6 +178,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8442D98C177AA72E003F9A1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE74174045CE001B7683 /* Expecta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9ACDF0B13B2DD520010F4D7;
+			remoteInfo = Expecta;
+		};
+		8442D98E177AA72E003F9A1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F2FE83174045D1001B7683 /* Specta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D96A2514B6B8AB007D9521;
+			remoteInfo = Specta;
+		};
 		849E9051174D8AB9005FAB56 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */;
@@ -191,20 +205,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 849E9002174D8915005FAB56;
 			remoteInfo = KrakenKit;
-		};
-		849E907C174D8EC9005FAB56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84F2FE74174045CE001B7683 /* Expecta.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9ACDF0B13B2DD520010F4D7;
-			remoteInfo = Expecta;
-		};
-		849E907E174D8EC9005FAB56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84F2FE83174045D1001B7683 /* Specta.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9D96A2514B6B8AB007D9521;
-			remoteInfo = Specta;
 		};
 		84F2FE161740287A001B7683 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -384,6 +384,7 @@
 		8442D975177A998B003F9A1F /* KREntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KREntity.h; path = ../../src/cpp/KREntity.h; sourceTree = "<group>"; };
 		8442D980177A9D55003F9A1F /* KRServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KRServer.cpp; path = ../../src/cpp/KRServer.cpp; sourceTree = "<group>"; };
 		8442D981177A9D55003F9A1F /* KRServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRServer.h; path = ../../src/cpp/KRServer.h; sourceTree = "<group>"; };
+		8442D991177AA73A003F9A1F /* libSpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSpecta.a; path = "../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug/libSpecta.a"; sourceTree = "<group>"; };
 		84774A8A1745974C00CA311B /* KRAClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAClientSpec.m; sourceTree = "<group>"; };
 		849E8F7F1749D7B2005FAB56 /* KRAEventSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAEventSpec.m; sourceTree = "<group>"; };
 		849E8FCC174D87E4005FAB56 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -479,8 +480,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849E9082174D8EDE005FAB56 /* libExpecta.a in Frameworks */,
-				849E9080174D8EDE005FAB56 /* libSpecta.a in Frameworks */,
+				8442D992177AA73A003F9A1F /* libSpecta.a in Frameworks */,
+				8442D990177AA73A003F9A1F /* libExpecta.a in Frameworks */,
 				849E907B174D8EA9005FAB56 /* CoreServices.framework in Frameworks */,
 				849E907A174D8EA2005FAB56 /* SystemConfiguration.framework in Frameworks */,
 				84F2FED917404BEE001B7683 /* Security.framework in Frameworks */,
@@ -683,6 +684,7 @@
 		84ADF9D516ADA7C60026F990 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8442D991177AA73A003F9A1F /* libSpecta.a */,
 				8442D9101779649F003F9A1F /* libcurl.dylib */,
 				849E906A174D8C83005FAB56 /* SystemConfiguration.framework */,
 				849E9054174D8ACE005FAB56 /* Foundation.framework */,
@@ -985,8 +987,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				849E907D174D8EC9005FAB56 /* PBXTargetDependency */,
-				849E907F174D8EC9005FAB56 /* PBXTargetDependency */,
+				8442D98D177AA72E003F9A1F /* PBXTargetDependency */,
+				8442D98F177AA72E003F9A1F /* PBXTargetDependency */,
 				849E9078174D8E31005FAB56 /* PBXTargetDependency */,
 			);
 			name = KrakenKitTests;
@@ -1250,6 +1252,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8442D98D177AA72E003F9A1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Expecta;
+			targetProxy = 8442D98C177AA72E003F9A1F /* PBXContainerItemProxy */;
+		};
+		8442D98F177AA72E003F9A1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Specta;
+			targetProxy = 8442D98E177AA72E003F9A1F /* PBXContainerItemProxy */;
+		};
 		849E9052174D8AB9005FAB56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Mantle Mac";
@@ -1259,16 +1271,6 @@
 			isa = PBXTargetDependency;
 			target = 849E9002174D8915005FAB56 /* KrakenKit */;
 			targetProxy = 849E9077174D8E31005FAB56 /* PBXContainerItemProxy */;
-		};
-		849E907D174D8EC9005FAB56 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Expecta;
-			targetProxy = 849E907C174D8EC9005FAB56 /* PBXContainerItemProxy */;
-		};
-		849E907F174D8EC9005FAB56 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Specta;
-			targetProxy = 849E907E174D8EC9005FAB56 /* PBXContainerItemProxy */;
 		};
 		84F2FE45174028D6001B7683 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1342,7 +1344,10 @@
 					"\"$(SRCROOT)/External/Mantle/Mantle\"",
 				);
 				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/KrakenKit\\\"",
+					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -1513,7 +1518,10 @@
 					"\"$(SRCROOT)/External/Mantle/Mantle\"",
 				);
 				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/KrakenKit\\\"",
+					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -1623,7 +1631,10 @@
 					"\"$(SRCROOT)/External/Mantle/Mantle\"",
 				);
 				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/KrakenKit\\\"",
+					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -1648,7 +1659,10 @@
 					"\"$(SRCROOT)/External/Mantle/Mantle\"",
 				);
 				INFOPLIST_FILE = "KrakenKitTests/KrakenKitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/KrakenKit\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/KrakenKit\\\"",
+					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KrakenKit-fofyggyaksptogeacqbkcxabdtiz/Build/Products/Debug",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
