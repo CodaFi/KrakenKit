@@ -1,6 +1,7 @@
 [submodule "build-mac/External/Mantle"]
 	path = build-mac/External/Mantle
 	url = https://github.com/github/Mantle.git
+	ignore = dirty
 [submodule "build-mac/External/AFNetworking"]
 	path = build-mac/External/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
