@@ -10,6 +10,7 @@
 #define __KrakenKit__KRUser__
 
 #include "KREntity.h"
+#include "KRServer.h"
 #include <string>
 
 namespace KrakenKit {
@@ -17,6 +18,7 @@ namespace KrakenKit {
 		
 	public:
 		User(std::string &name, std::string &email);
+		User(std::string &login, Server &server);
 	};
 }
 

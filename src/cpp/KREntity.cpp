@@ -19,10 +19,14 @@ AuthenticatedObject *Entity::deserialize(jsonz_object_t *object) {
 	Entity *entity = new Entity();
 	
 	std::string avatarURL = (char *)jsonz_dict_get(object, "avatar_url");
+	unsigned long publicRepos = *(unsigned long *)jsonz_dict_get(object, "public_repos");
+	unsigned long privateRepos = *(unsigned long *)jsonz_dict_get(object, "owned_private_repos");
 	unsigned long diskUsage = *(unsigned long *)jsonz_dict_get(object, "disk_usage");
 	
 	entity->setAvatarURL(avatarURL);
 	entity->setDiskUsage(diskUsage);
+	entity->setPublicRepoCount(publicRepos);
+	entity->setPrivateRepoCount(privateRepos);
 	
 	return entity;
 }

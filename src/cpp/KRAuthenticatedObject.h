@@ -15,10 +15,13 @@ struct jsonz_object_t;
 
 namespace KrakenKit {
 	class AuthenticatedObject {
+		
 	public:
 		AuthenticatedObject();
 
-		Server &server() { return mServer; }
+		const Server &server() { return mServer; }
+		void setServer(Server &server) { mServer = server; }
+
 		virtual AuthenticatedObject *deserialize(jsonz_object_t *object);
 		
 	private:
