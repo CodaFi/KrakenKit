@@ -26,11 +26,11 @@ KrakenKit::HTTPOperation::~HTTPOperation() {
 	curl_easy_cleanup(mCurl);
 }
 
-void KrakenKit::HTTPOperation::getPath(std::string &path, std::map<std::string, std::string> &params, KRHTTPOperationSuccessCallback callback) {
+void KrakenKit::HTTPOperation::getPath(URLRequest &request, KRHTTPOperationSuccessCallback callback) {
 	KRAssert(callback != NULL);
 	
 	curl_easy_setopt(mCurl, CURLOPT_HTTPGET, true);
-	curl_easy_setopt(mCurl, CURLOPT_URL, path.c_str());
+	curl_easy_setopt(mCurl, CURLOPT_URL, request.url().c_str());
 	if (curl_easy_perform(mCurl) == CURLE_OK) {
 		jsonz_object_t *json = (jsonz_object_t *)jsonz_parse((const char *)this->mResponse->data());
 		if (callback) callback(this, this->mResponse, json);
@@ -38,12 +38,12 @@ void KrakenKit::HTTPOperation::getPath(std::string &path, std::map<std::string, 
 	
 }
 
-void KrakenKit::HTTPOperation::getPath(std::string &path, std::map<std::string, std::string> &params, KRHTTPOperationSuccessCallback success, KRHTTPOperationFailureCallback failure) {
+void KrakenKit::HTTPOperation::getPath(URLRequest &request, KRHTTPOperationSuccessCallback success, KRHTTPOperationFailureCallback failure) {
 	KRAssert(success != NULL);
 	KRAssert(failure != NULL);
 
 	curl_easy_setopt(mCurl, CURLOPT_HTTPGET, true);
-	curl_easy_setopt(mCurl, CURLOPT_URL, path.c_str());
+	curl_easy_setopt(mCurl, CURLOPT_URL, request.url().c_str());
 	CURLcode respCode = curl_easy_perform(mCurl);
 	if (respCode == CURLE_OK) {
 		jsonz_object_t *json = (jsonz_object_t *)jsonz_parse((const char *)this->mResponse->data());
@@ -59,11 +59,11 @@ void KrakenKit::HTTPOperation::getPath(std::string &path, std::map<std::string, 
 
 #if __has_feature(blocks)
 
-void KrakenKit::HTTPOperation::getPath(std::string &path, std::map<std::string, std::string> &params, KRHTTPOperationSuccessBlock callback) {
+void KrakenKit::HTTPOperation::getPath(URLRequest &request, KRHTTPOperationSuccessBlock callback) {
 	KRAssert(callback != NULL);
 	
 	curl_easy_setopt(mCurl, CURLOPT_HTTPGET, true);
-	curl_easy_setopt(mCurl, CURLOPT_URL, path.c_str());
+	curl_easy_setopt(mCurl, CURLOPT_URL, request.url().c_str());
 	if (curl_easy_perform(mCurl) == CURLE_OK) {
 		jsonz_object_t *json = (jsonz_object_t *)jsonz_parse((const char *)this->mResponse->data());
 		if (callback) callback(this, this->mResponse, json);
@@ -71,12 +71,12 @@ void KrakenKit::HTTPOperation::getPath(std::string &path, std::map<std::string, 
 	
 }
 
-void KrakenKit::HTTPOperation::getPath(std::string &path, std::map<std::string, std::string> &params, KRHTTPOperationSuccessBlock success, KRHTTPOperationFailureBlock failure) {
+void KrakenKit::HTTPOperation::getPath(URLRequest &request, KRHTTPOperationSuccessBlock success, KRHTTPOperationFailureBlock failure) {
 	KRAssert(success != NULL);
 	KRAssert(failure != NULL);
 	
 	curl_easy_setopt(mCurl, CURLOPT_HTTPGET, true);
-	curl_easy_setopt(mCurl, CURLOPT_URL, path.c_str());
+	curl_easy_setopt(mCurl, CURLOPT_URL, request.url().c_str());
 	CURLcode respCode = curl_easy_perform(mCurl);
 	if (respCode == CURLE_OK) {
 		jsonz_object_t *json = (jsonz_object_t *)jsonz_parse((const char *)this->mResponse->data());

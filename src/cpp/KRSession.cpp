@@ -7,13 +7,12 @@
 //
 
 #include "KRSession.h"
+#include "KRURLRequest.h"
 
-using namespace KrakenKit;
+using namespace KrakenKit::API;
 
-Session::Session() {
-	
-}
-
-Session::~Session() {
-	
+void KrakenKit::API::fetchUserWithName(const char *name, KRHTTPOperationSuccessCallback callback){
+//    HTTPOperation *op = new HTTPOperation(Session::defaultSession().accessToken());
+//    URLRequest *request = new URLRequest(Session::defaultSession().baseURL());
+//    op->getPath(*request, callback);
 }

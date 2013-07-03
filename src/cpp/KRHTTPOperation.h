@@ -13,8 +13,7 @@
 #include "KRAPIResponse.h"
 #include "KRTypes.h"
 #include <curl/curl.h>
-#include <string>
-#include <map>
+#include "KRURLRequest.h"
 
 namespace KrakenKit {
 	
@@ -24,13 +23,13 @@ namespace KrakenKit {
 		HTTPOperation(std::string &access_token);
 		~HTTPOperation();
 		
-		void getPath(std::string &path, std::map<std::string, std::string> &params, KRHTTPOperationSuccessCallback callback);
-		void getPath(std::string &path, std::map<std::string, std::string> &params, KRHTTPOperationSuccessCallback success, KRHTTPOperationFailureCallback failure);
+		virtual void getPath(URLRequest &request, KRHTTPOperationSuccessCallback callback);
+		virtual void getPath(URLRequest &request, KRHTTPOperationSuccessCallback success, KRHTTPOperationFailureCallback failure);
 #if __has_feature(blocks)
-		void getPath(std::string &path, std::map<std::string, std::string> &params, KRHTTPOperationSuccessBlock success);
-		void getPath(std::string &path, std::map<std::string, std::string> &params, KRHTTPOperationSuccessBlock success, KRHTTPOperationFailureBlock failure);
+		virtual void getPath(URLRequest &request, KRHTTPOperationSuccessBlock success);
+		virtual void getPath(URLRequest &request, KRHTTPOperationSuccessBlock success, KRHTTPOperationFailureBlock failure);
 #endif
-
+        
 	private:
 		CURL *mCurl;
 		std::string mAccessToken;
