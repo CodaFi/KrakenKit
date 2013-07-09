@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8415D9C4178BA5E1003C31F1 /* libjsonz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8415D9C3178BA5E1003C31F1 /* libjsonz.a */; };
+		8415D9C5178BA5E2003C31F1 /* libjsonz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8415D9C3178BA5E1003C31F1 /* libjsonz.a */; };
 		844002051768E84000D747B9 /* FXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E11768E84000D747B9 /* FXKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		844002061768E84000D747B9 /* FXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E11768E84000D747B9 /* FXKeychain.h */; };
 		844002071768E84000D747B9 /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E21768E84000D747B9 /* FXKeychain.m */; };
@@ -102,14 +104,6 @@
 		8442D944177A75E7003F9A1F /* KRAPIResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D941177A75E7003F9A1F /* KRAPIResponse.cpp */; };
 		8442D945177A75E7003F9A1F /* KRAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D942177A75E7003F9A1F /* KRAPIResponse.h */; };
 		8442D946177A75E7003F9A1F /* KRAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D942177A75E7003F9A1F /* KRAPIResponse.h */; };
-		8442D956177A7DF0003F9A1F /* jsonz.c in Sources */ = {isa = PBXBuildFile; fileRef = 8442D954177A7DF0003F9A1F /* jsonz.c */; };
-		8442D957177A7DF0003F9A1F /* jsonz.c in Sources */ = {isa = PBXBuildFile; fileRef = 8442D954177A7DF0003F9A1F /* jsonz.c */; };
-		8442D958177A7DF0003F9A1F /* object.c in Sources */ = {isa = PBXBuildFile; fileRef = 8442D955177A7DF0003F9A1F /* object.c */; };
-		8442D959177A7DF0003F9A1F /* object.c in Sources */ = {isa = PBXBuildFile; fileRef = 8442D955177A7DF0003F9A1F /* object.c */; };
-		8442D95C177A7DFA003F9A1F /* jsonz.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D95A177A7DFA003F9A1F /* jsonz.h */; };
-		8442D95D177A7DFA003F9A1F /* jsonz.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D95A177A7DFA003F9A1F /* jsonz.h */; };
-		8442D95E177A7DFA003F9A1F /* object.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D95B177A7DFA003F9A1F /* object.h */; };
-		8442D95F177A7DFA003F9A1F /* object.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D95B177A7DFA003F9A1F /* object.h */; };
 		8442D962177A8DA1003F9A1F /* KRURLRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D960177A8DA1003F9A1F /* KRURLRequest.cpp */; };
 		8442D963177A8DA1003F9A1F /* KRURLRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D960177A8DA1003F9A1F /* KRURLRequest.cpp */; };
 		8442D964177A8DA1003F9A1F /* KRURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D961177A8DA1003F9A1F /* KRURLRequest.h */; };
@@ -322,6 +316,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8415D9C3178BA5E1003C31F1 /* libjsonz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjsonz.a; path = ../src/extern/libjsonz/bld/libjsonz.a; sourceTree = "<group>"; };
 		844001E11768E84000D747B9 /* FXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXKeychain.h; path = ../../src/objc/FXKeychain.h; sourceTree = "<group>"; };
 		844001E21768E84000D747B9 /* FXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXKeychain.m; path = ../../src/objc/FXKeychain.m; sourceTree = "<group>"; };
 		844001E31768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KRAClient+KRAHandlerBlocks.h"; sourceTree = "<group>"; };
@@ -370,10 +365,6 @@
 		8442D93E17796FFB003F9A1F /* KRDefines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KRDefines.cpp; path = ../../src/cpp/KRDefines.cpp; sourceTree = "<group>"; };
 		8442D941177A75E7003F9A1F /* KRAPIResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KRAPIResponse.cpp; path = ../../src/cpp/KRAPIResponse.cpp; sourceTree = "<group>"; };
 		8442D942177A75E7003F9A1F /* KRAPIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRAPIResponse.h; path = ../../src/cpp/KRAPIResponse.h; sourceTree = "<group>"; };
-		8442D954177A7DF0003F9A1F /* jsonz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jsonz.c; path = ../../src/extern/libjsonz/src/jsonz.c; sourceTree = "<group>"; };
-		8442D955177A7DF0003F9A1F /* object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = object.c; path = ../../src/extern/libjsonz/src/object.c; sourceTree = "<group>"; };
-		8442D95A177A7DFA003F9A1F /* jsonz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsonz.h; path = ../../src/extern/libjsonz/include/jsonz/jsonz.h; sourceTree = "<group>"; };
-		8442D95B177A7DFA003F9A1F /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object.h; path = ../../src/extern/libjsonz/include/jsonz/object.h; sourceTree = "<group>"; };
 		8442D960177A8DA1003F9A1F /* KRURLRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KRURLRequest.cpp; path = ../../src/cpp/KRURLRequest.cpp; sourceTree = "<group>"; };
 		8442D961177A8DA1003F9A1F /* KRURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRURLRequest.h; path = ../../src/cpp/KRURLRequest.h; sourceTree = "<group>"; };
 		8442D968177A991B003F9A1F /* KRAuthenticatedObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KRAuthenticatedObject.cpp; path = ../../src/cpp/KRAuthenticatedObject.cpp; sourceTree = "<group>"; };
@@ -456,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8442D9111779649F003F9A1F /* libcurl.dylib in Frameworks */,
+				8415D9C4178BA5E1003C31F1 /* libjsonz.a in Frameworks */,
 				849E906B174D8C83005FAB56 /* SystemConfiguration.framework in Frameworks */,
 				849E9053174D8AC0005FAB56 /* Mantle.framework in Frameworks */,
 				849E9050174D8AA0005FAB56 /* CoreServices.framework in Frameworks */,
@@ -472,6 +464,7 @@
 				84F2FE4A174029C6001B7683 /* MobileCoreServices.framework in Frameworks */,
 				84F2FE48174029C1001B7683 /* SystemConfiguration.framework in Frameworks */,
 				84F2FE46174028DD001B7683 /* libMantle.a in Frameworks */,
+				8415D9C5178BA5E2003C31F1 /* libjsonz.a in Frameworks */,
 				84ADF9D716ADA7C60026F990 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,17 +536,6 @@
 				8442D93E17796FFB003F9A1F /* KRDefines.cpp */,
 			);
 			name = cpp;
-			sourceTree = "<group>";
-		};
-		8442D951177A7DE5003F9A1F /* libjsonz */ = {
-			isa = PBXGroup;
-			children = (
-				8442D954177A7DF0003F9A1F /* jsonz.c */,
-				8442D95A177A7DFA003F9A1F /* jsonz.h */,
-				8442D955177A7DF0003F9A1F /* object.c */,
-				8442D95B177A7DFA003F9A1F /* object.h */,
-			);
-			name = libjsonz;
 			sourceTree = "<group>";
 		};
 		8442D966177A989F003F9A1F /* core */ = {
@@ -684,6 +666,7 @@
 		84ADF9D516ADA7C60026F990 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8415D9C3178BA5E1003C31F1 /* libjsonz.a */,
 				8442D991177AA73A003F9A1F /* libSpecta.a */,
 				8442D9101779649F003F9A1F /* libcurl.dylib */,
 				849E906A174D8C83005FAB56 /* SystemConfiguration.framework */,
@@ -835,7 +818,6 @@
 			isa = PBXGroup;
 			children = (
 				844002021768E84000D747B9 /* metamacros.h */,
-				8442D951177A7DE5003F9A1F /* libjsonz */,
 				849E8FCA174D87E4005FAB56 /* Configuration */,
 				84F2FEDC17404D2E001B7683 /* FXKeychain */,
 				84F2FE5917402C70001B7683 /* Mantle */,
@@ -855,9 +837,7 @@
 				844002431768E84000D747B9 /* KRAUser.h in Headers */,
 				844002291768E84000D747B9 /* KRAIssue.h in Headers */,
 				8440021D1768E84000D747B9 /* KRACommit.h in Headers */,
-				8442D95C177A7DFA003F9A1F /* jsonz.h in Headers */,
 				844002211768E84000D747B9 /* KRAEvent.h in Headers */,
-				8442D95E177A7DFA003F9A1F /* object.h in Headers */,
 				8440023B1768E84000D747B9 /* KRARepository.h in Headers */,
 				8442D984177A9D55003F9A1F /* KRServer.h in Headers */,
 				844002471768E84000D747B9 /* metamacros.h in Headers */,
@@ -905,7 +885,6 @@
 				8440021A1768E84000D747B9 /* KRAComment.h in Headers */,
 				8442D985177A9D55003F9A1F /* KRServer.h in Headers */,
 				8442D96D177A991B003F9A1F /* KRAuthenticatedObject.h in Headers */,
-				8442D95F177A7DFA003F9A1F /* object.h in Headers */,
 				844002441768E84000D747B9 /* KRAUser.h in Headers */,
 				84F2FE37174028CF001B7683 /* AFJSONRequestOperation.h in Headers */,
 				8442D973177A9944003F9A1F /* KRUser.h in Headers */,
@@ -914,7 +893,6 @@
 				8442D91F1779650C003F9A1F /* KRHTTPOperation.h in Headers */,
 				84F2FE3B174028CF001B7683 /* AFNetworking.h in Headers */,
 				84F2FE3C174028CF001B7683 /* AFPropertyListRequestOperation.h in Headers */,
-				8442D95D177A7DFA003F9A1F /* jsonz.h in Headers */,
 				8442D946177A75E7003F9A1F /* KRAPIResponse.h in Headers */,
 				8442D979177A998B003F9A1F /* KREntity.h in Headers */,
 				8442D925177967D8003F9A1F /* KRError.h in Headers */,
@@ -1163,7 +1141,6 @@
 				849E9046174D8A85005FAB56 /* AFHTTPRequestOperation.m in Sources */,
 				844002131768E84000D747B9 /* KRAClient+KRAUser.m in Sources */,
 				8440021B1768E84000D747B9 /* KRAComment.m in Sources */,
-				8442D956177A7DF0003F9A1F /* jsonz.c in Sources */,
 				844002391768E84000D747B9 /* KRAPullRequest.m in Sources */,
 				8440020F1768E84000D747B9 /* KRAClient+KRASearch.m in Sources */,
 				8442D970177A9944003F9A1F /* KRUser.cpp in Sources */,
@@ -1192,7 +1169,6 @@
 				844002351768E84000D747B9 /* KRANotification.m in Sources */,
 				844002171768E84000D747B9 /* KRAClient.m in Sources */,
 				8440025B1768EAAA00D747B9 /* KRACommit.m in Sources */,
-				8442D958177A7DF0003F9A1F /* object.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1206,7 +1182,6 @@
 				84F2FE34174028CF001B7683 /* AFHTTPRequestOperation.m in Sources */,
 				84F2FE36174028CF001B7683 /* AFImageRequestOperation.m in Sources */,
 				844002141768E84000D747B9 /* KRAClient+KRAUser.m in Sources */,
-				8442D957177A7DF0003F9A1F /* jsonz.c in Sources */,
 				8440021C1768E84000D747B9 /* KRAComment.m in Sources */,
 				8440023A1768E84000D747B9 /* KRAPullRequest.m in Sources */,
 				8442D971177A9944003F9A1F /* KRUser.cpp in Sources */,
@@ -1235,7 +1210,6 @@
 				844002081768E84000D747B9 /* FXKeychain.m in Sources */,
 				844002361768E84000D747B9 /* KRANotification.m in Sources */,
 				844002181768E84000D747B9 /* KRAClient.m in Sources */,
-				8442D959177A7DF0003F9A1F /* object.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1319,7 +1293,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/External/Mantle/Mantle\\\"",
+					"$(SRCROOT)/../src/extern/libjsonz/bld",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1370,6 +1347,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src/extern/libjsonz/include\"";
 				INFOPLIST_FILE = "KrakenKit/KrakenKit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../src/extern/libjsonz/bld",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1397,6 +1378,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src/extern/libjsonz/include\"";
 				INFOPLIST_FILE = "KrakenKit/KrakenKit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../src/extern/libjsonz/bld",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1424,6 +1409,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src/extern/libjsonz/include\"";
 				INFOPLIST_FILE = "KrakenKit/KrakenKit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../src/extern/libjsonz/bld",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1475,6 +1464,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src/extern/libjsonz/include\"";
 				INFOPLIST_FILE = "KrakenKit/KrakenKit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../src/extern/libjsonz/bld",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1490,7 +1483,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/External/Mantle/Mantle\\\"",
+					"$(SRCROOT)/../src/extern/libjsonz/bld",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1585,7 +1581,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/External/Mantle/Mantle\\\"",
+					"$(SRCROOT)/../src/extern/libjsonz/bld",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1600,7 +1599,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/External/Mantle/Mantle\\\"",
+					"$(SRCROOT)/../src/extern/libjsonz/bld",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
