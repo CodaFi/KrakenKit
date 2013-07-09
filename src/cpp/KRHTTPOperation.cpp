@@ -7,7 +7,7 @@
 //
 
 #include "KRHTTPOperation.h"
-#include "jsonz.h"
+#include <jsonz/jsonz.h>
 #include "KRDefines.h"
 
 using namespace KrakenKit;

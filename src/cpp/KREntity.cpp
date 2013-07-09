@@ -7,7 +7,7 @@
 //
 
 #include "KREntity.h"
-#include "jsonz.h"
+#include <jsonz/jsonz.h>
 
 using namespace KrakenKit;
 

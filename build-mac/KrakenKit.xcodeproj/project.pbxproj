@@ -83,15 +83,12 @@
 		8440025B1768EAAA00D747B9 /* KRACommit.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001EE1768E84000D747B9 /* KRACommit.m */; };
 		8442D9111779649F003F9A1F /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8442D9101779649F003F9A1F /* libcurl.dylib */; };
 		8442D916177964D5003F9A1F /* KRSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D914177964D5003F9A1F /* KRSession.cpp */; };
-		8442D917177964D5003F9A1F /* KRSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D914177964D5003F9A1F /* KRSession.cpp */; };
 		8442D918177964D5003F9A1F /* KRSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D915177964D5003F9A1F /* KRSession.h */; };
 		8442D919177964D5003F9A1F /* KRSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D915177964D5003F9A1F /* KRSession.h */; };
 		8442D91C1779650C003F9A1F /* KRHTTPOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D91A1779650C003F9A1F /* KRHTTPOperation.cpp */; };
-		8442D91D1779650C003F9A1F /* KRHTTPOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D91A1779650C003F9A1F /* KRHTTPOperation.cpp */; };
 		8442D91E1779650C003F9A1F /* KRHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D91B1779650C003F9A1F /* KRHTTPOperation.h */; };
 		8442D91F1779650C003F9A1F /* KRHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D91B1779650C003F9A1F /* KRHTTPOperation.h */; };
 		8442D922177967D8003F9A1F /* KRError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D920177967D8003F9A1F /* KRError.cpp */; };
-		8442D923177967D8003F9A1F /* KRError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D920177967D8003F9A1F /* KRError.cpp */; };
 		8442D924177967D8003F9A1F /* KRError.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D921177967D8003F9A1F /* KRError.h */; };
 		8442D925177967D8003F9A1F /* KRError.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D921177967D8003F9A1F /* KRError.h */; };
 		8442D92717796C3C003F9A1F /* KRTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D92617796C3C003F9A1F /* KRTypes.h */; };
@@ -99,29 +96,22 @@
 		8442D92A17796E43003F9A1F /* KRDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D92917796E43003F9A1F /* KRDefines.h */; };
 		8442D92B17796E43003F9A1F /* KRDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D92917796E43003F9A1F /* KRDefines.h */; };
 		8442D93F17796FFB003F9A1F /* KRDefines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D93E17796FFB003F9A1F /* KRDefines.cpp */; };
-		8442D94017796FFB003F9A1F /* KRDefines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D93E17796FFB003F9A1F /* KRDefines.cpp */; };
 		8442D943177A75E7003F9A1F /* KRAPIResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D941177A75E7003F9A1F /* KRAPIResponse.cpp */; };
-		8442D944177A75E7003F9A1F /* KRAPIResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D941177A75E7003F9A1F /* KRAPIResponse.cpp */; };
 		8442D945177A75E7003F9A1F /* KRAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D942177A75E7003F9A1F /* KRAPIResponse.h */; };
 		8442D946177A75E7003F9A1F /* KRAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D942177A75E7003F9A1F /* KRAPIResponse.h */; };
 		8442D962177A8DA1003F9A1F /* KRURLRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D960177A8DA1003F9A1F /* KRURLRequest.cpp */; };
-		8442D963177A8DA1003F9A1F /* KRURLRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D960177A8DA1003F9A1F /* KRURLRequest.cpp */; };
 		8442D964177A8DA1003F9A1F /* KRURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D961177A8DA1003F9A1F /* KRURLRequest.h */; };
 		8442D965177A8DA1003F9A1F /* KRURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D961177A8DA1003F9A1F /* KRURLRequest.h */; };
 		8442D96A177A991B003F9A1F /* KRAuthenticatedObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D968177A991B003F9A1F /* KRAuthenticatedObject.cpp */; };
-		8442D96B177A991B003F9A1F /* KRAuthenticatedObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D968177A991B003F9A1F /* KRAuthenticatedObject.cpp */; };
 		8442D96C177A991B003F9A1F /* KRAuthenticatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D969177A991B003F9A1F /* KRAuthenticatedObject.h */; };
 		8442D96D177A991B003F9A1F /* KRAuthenticatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D969177A991B003F9A1F /* KRAuthenticatedObject.h */; };
 		8442D970177A9944003F9A1F /* KRUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D96E177A9944003F9A1F /* KRUser.cpp */; };
-		8442D971177A9944003F9A1F /* KRUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D96E177A9944003F9A1F /* KRUser.cpp */; };
 		8442D972177A9944003F9A1F /* KRUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D96F177A9944003F9A1F /* KRUser.h */; };
 		8442D973177A9944003F9A1F /* KRUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D96F177A9944003F9A1F /* KRUser.h */; };
 		8442D976177A998B003F9A1F /* KREntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D974177A998B003F9A1F /* KREntity.cpp */; };
-		8442D977177A998B003F9A1F /* KREntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D974177A998B003F9A1F /* KREntity.cpp */; };
 		8442D978177A998B003F9A1F /* KREntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D975177A998B003F9A1F /* KREntity.h */; };
 		8442D979177A998B003F9A1F /* KREntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D975177A998B003F9A1F /* KREntity.h */; };
 		8442D982177A9D55003F9A1F /* KRServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D980177A9D55003F9A1F /* KRServer.cpp */; };
-		8442D983177A9D55003F9A1F /* KRServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8442D980177A9D55003F9A1F /* KRServer.cpp */; };
 		8442D984177A9D55003F9A1F /* KRServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D981177A9D55003F9A1F /* KRServer.h */; };
 		8442D985177A9D55003F9A1F /* KRServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442D981177A9D55003F9A1F /* KRServer.h */; };
 		8442D990177AA73A003F9A1F /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FE99174045D8001B7683 /* libExpecta.a */; };
@@ -1184,28 +1174,18 @@
 				844002141768E84000D747B9 /* KRAClient+KRAUser.m in Sources */,
 				8440021C1768E84000D747B9 /* KRAComment.m in Sources */,
 				8440023A1768E84000D747B9 /* KRAPullRequest.m in Sources */,
-				8442D971177A9944003F9A1F /* KRUser.cpp in Sources */,
 				844002101768E84000D747B9 /* KRAClient+KRASearch.m in Sources */,
-				8442D96B177A991B003F9A1F /* KRAuthenticatedObject.cpp in Sources */,
 				84F2FE38174028CF001B7683 /* AFJSONRequestOperation.m in Sources */,
-				8442D91D1779650C003F9A1F /* KRHTTPOperation.cpp in Sources */,
 				84F2FE3D174028CF001B7683 /* AFPropertyListRequestOperation.m in Sources */,
 				8440024C1768E84000D747B9 /* NSData+Base64.m in Sources */,
 				84F2FE3F174028CF001B7683 /* AFURLConnectionOperation.m in Sources */,
-				8442D923177967D8003F9A1F /* KRError.cpp in Sources */,
 				8440022C1768E84000D747B9 /* KRAIssue.m in Sources */,
-				8442D944177A75E7003F9A1F /* KRAPIResponse.cpp in Sources */,
 				8440023E1768E84000D747B9 /* KRARepository.m in Sources */,
 				84F2FE41174028CF001B7683 /* AFXMLRequestOperation.m in Sources */,
-				8442D917177964D5003F9A1F /* KRSession.cpp in Sources */,
 				844002241768E84000D747B9 /* KRAEvent.m in Sources */,
 				844002421768E84000D747B9 /* KRATypes.m in Sources */,
-				8442D94017796FFB003F9A1F /* KRDefines.cpp in Sources */,
 				844002281768E84000D747B9 /* KRAEventPayload.m in Sources */,
-				8442D977177A998B003F9A1F /* KREntity.cpp in Sources */,
 				844002201768E84000D747B9 /* KRACommit.m in Sources */,
-				8442D983177A9D55003F9A1F /* KRServer.cpp in Sources */,
-				8442D963177A8DA1003F9A1F /* KRURLRequest.cpp in Sources */,
 				844002461768E84000D747B9 /* KRAUser.m in Sources */,
 				844002081768E84000D747B9 /* FXKeychain.m in Sources */,
 				844002361768E84000D747B9 /* KRANotification.m in Sources */,
