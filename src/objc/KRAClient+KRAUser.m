@@ -78,4 +78,25 @@
 		   failure:NULL];
 }
 
+- (void)repositoriesForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler {
+	[self getPath:[NSString stringWithFormat:@"user/repos"]
+	   parameters:nil
+		  success:[self successHandlerForArrayOfModelClass:[KRARepository class] clientHandler:completionHandler]
+		  failure:NULL];
+}
+
+- (void)issuesForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler {
+	[self getPath:[NSString stringWithFormat:@"user/issues"]
+	   parameters:nil
+		  success:[self successHandlerForArrayOfModelClass:[KRARepository class] clientHandler:completionHandler]
+		  failure:NULL];
+}
+
+- (void)issuesForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
+	[self getPath:[NSString stringWithFormat:@"users/%@/issues", user.name]
+	   parameters:nil
+		  success:[self successHandlerForArrayOfModelClass:[KRARepository class] clientHandler:completionHandler]
+		  failure:NULL];
+}
+
 @end

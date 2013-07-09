@@ -15,6 +15,7 @@
 - (void)fetchUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
 - (void)fetchUserWithID:(NSString *)userID completion:(KRAClientCompletionBlock)completionHandler;
 
+- (void)repositoriesForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler;
 - (void)repositoriesForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
 
 - (void)eventsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
@@ -25,5 +26,8 @@
 
 - (void)starRepository:(KRARepository *)repo completion:(KRAClientCompletionBlock)completionHandler;
 - (void)unstarRepository:(KRARepository *)repo completion:(KRAClientCompletionBlock)completionHandler;
+
+- (void)issuesForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler;
+- (void)issuesForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
 
 @end
