@@ -9,6 +9,7 @@
 #ifndef __KrakenKit__KRHTTPOperation__
 #define __KrakenKit__KRHTTPOperation__
 
+#include "KROperation.h"
 #include "KRError.h"
 #include "KRAPIResponse.h"
 #include "KRTypes.h"
@@ -17,11 +18,14 @@
 
 namespace KrakenKit {
 	
-	class HTTPOperation {
+	class HTTPOperation : public Operation {
 			
 	public:
 		HTTPOperation(std::string &access_token);
 		~HTTPOperation();
+		
+		virtual void start();
+		virtual void main();
 		
 		virtual void getPath(URLRequest &request, KRHTTPOperationSuccessCallback callback);
 		virtual void getPath(URLRequest &request, KRHTTPOperationSuccessCallback success, KRHTTPOperationFailureCallback failure);

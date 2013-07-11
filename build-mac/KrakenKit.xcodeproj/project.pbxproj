@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		8415D9C4178BA5E1003C31F1 /* libjsonz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8415D9C3178BA5E1003C31F1 /* libjsonz.a */; };
 		8415D9C5178BA5E2003C31F1 /* libjsonz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8415D9C3178BA5E1003C31F1 /* libjsonz.a */; };
+		84273AD2178E947A00C40276 /* KROperationQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84273AD0178E947A00C40276 /* KROperationQueue.cpp */; };
+		84273AD3178E947A00C40276 /* KROperationQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84273AD0178E947A00C40276 /* KROperationQueue.cpp */; };
+		84273AD4178E947A00C40276 /* KROperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 84273AD1178E947A00C40276 /* KROperationQueue.h */; };
+		84273AD5178E947A00C40276 /* KROperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 84273AD1178E947A00C40276 /* KROperationQueue.h */; };
+		84273AE0178E94CA00C40276 /* KROperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84273ADE178E94CA00C40276 /* KROperation.cpp */; };
+		84273AE1178E94CA00C40276 /* KROperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84273ADE178E94CA00C40276 /* KROperation.cpp */; };
+		84273AE2178E94CA00C40276 /* KROperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84273ADF178E94CA00C40276 /* KROperation.h */; };
+		84273AE3178E94CA00C40276 /* KROperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84273ADF178E94CA00C40276 /* KROperation.h */; };
 		844002051768E84000D747B9 /* FXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E11768E84000D747B9 /* FXKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		844002061768E84000D747B9 /* FXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 844001E11768E84000D747B9 /* FXKeychain.h */; };
 		844002071768E84000D747B9 /* FXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 844001E21768E84000D747B9 /* FXKeychain.m */; };
@@ -307,6 +315,10 @@
 
 /* Begin PBXFileReference section */
 		8415D9C3178BA5E1003C31F1 /* libjsonz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjsonz.a; path = ../src/extern/libjsonz/bld/libjsonz.a; sourceTree = "<group>"; };
+		84273AD0178E947A00C40276 /* KROperationQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KROperationQueue.cpp; path = ../../src/cpp/KROperationQueue.cpp; sourceTree = "<group>"; };
+		84273AD1178E947A00C40276 /* KROperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KROperationQueue.h; path = ../../src/cpp/KROperationQueue.h; sourceTree = "<group>"; };
+		84273ADE178E94CA00C40276 /* KROperation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KROperation.cpp; path = ../../src/cpp/KROperation.cpp; sourceTree = "<group>"; };
+		84273ADF178E94CA00C40276 /* KROperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KROperation.h; path = ../../src/cpp/KROperation.h; sourceTree = "<group>"; };
 		844001E11768E84000D747B9 /* FXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXKeychain.h; path = ../../src/objc/FXKeychain.h; sourceTree = "<group>"; };
 		844001E21768E84000D747B9 /* FXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXKeychain.m; path = ../../src/objc/FXKeychain.m; sourceTree = "<group>"; };
 		844001E31768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KRAClient+KRAHandlerBlocks.h"; sourceTree = "<group>"; };
@@ -537,6 +549,10 @@
 				8442D961177A8DA1003F9A1F /* KRURLRequest.h */,
 				8442D91A1779650C003F9A1F /* KRHTTPOperation.cpp */,
 				8442D91B1779650C003F9A1F /* KRHTTPOperation.h */,
+				84273ADE178E94CA00C40276 /* KROperation.cpp */,
+				84273ADF178E94CA00C40276 /* KROperation.h */,
+				84273AD0178E947A00C40276 /* KROperationQueue.cpp */,
+				84273AD1178E947A00C40276 /* KROperationQueue.h */,
 				8442D941177A75E7003F9A1F /* KRAPIResponse.cpp */,
 				8442D942177A75E7003F9A1F /* KRAPIResponse.h */,
 				8442D920177967D8003F9A1F /* KRError.cpp */,
@@ -850,10 +866,12 @@
 				844002311768E84000D747B9 /* KrakenKit.h in Headers */,
 				8440022D1768E84000D747B9 /* KRAIssueLabel.h in Headers */,
 				8440020D1768E84000D747B9 /* KRAClient+KRASearch.h in Headers */,
+				84273AD4178E947A00C40276 /* KROperationQueue.h in Headers */,
 				8442D978177A998B003F9A1F /* KREntity.h in Headers */,
 				844002111768E84000D747B9 /* KRAClient+KRAUser.h in Headers */,
 				8442D92A17796E43003F9A1F /* KRDefines.h in Headers */,
 				84C4542517503EF9001ECB0F /* AFNetworking.h in Headers */,
+				84273AE2178E94CA00C40276 /* KROperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,6 +881,7 @@
 			files = (
 				8440021E1768E84000D747B9 /* KRACommit.h in Headers */,
 				8442D919177964D5003F9A1F /* KRSession.h in Headers */,
+				84273AD5178E947A00C40276 /* KROperationQueue.h in Headers */,
 				844002261768E84000D747B9 /* KRAEventPayload.h in Headers */,
 				844002481768E84000D747B9 /* metamacros.h in Headers */,
 				8440024A1768E84000D747B9 /* NSData+Base64.h in Headers */,
@@ -885,6 +904,7 @@
 				84F2FE3C174028CF001B7683 /* AFPropertyListRequestOperation.h in Headers */,
 				8442D946177A75E7003F9A1F /* KRAPIResponse.h in Headers */,
 				8442D979177A998B003F9A1F /* KREntity.h in Headers */,
+				84273AE3178E94CA00C40276 /* KROperation.h in Headers */,
 				8442D925177967D8003F9A1F /* KRError.h in Headers */,
 				844002061768E84000D747B9 /* FXKeychain.h in Headers */,
 				844002221768E84000D747B9 /* KRAEvent.h in Headers */,
@@ -1125,6 +1145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84273AD2178E947A00C40276 /* KROperationQueue.cpp in Sources */,
 				8440020B1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.m in Sources */,
 				8440022F1768E84000D747B9 /* KRAIssueLabel.m in Sources */,
 				849E9045174D8A85005FAB56 /* AFHTTPClient.m in Sources */,
@@ -1154,6 +1175,7 @@
 				8442D976177A998B003F9A1F /* KREntity.cpp in Sources */,
 				844002451768E84000D747B9 /* KRAUser.m in Sources */,
 				8442D982177A9D55003F9A1F /* KRServer.cpp in Sources */,
+				84273AE0178E94CA00C40276 /* KROperation.cpp in Sources */,
 				8442D962177A8DA1003F9A1F /* KRURLRequest.cpp in Sources */,
 				844002071768E84000D747B9 /* FXKeychain.m in Sources */,
 				844002351768E84000D747B9 /* KRANotification.m in Sources */,
@@ -1181,6 +1203,8 @@
 				84F2FE3F174028CF001B7683 /* AFURLConnectionOperation.m in Sources */,
 				8440022C1768E84000D747B9 /* KRAIssue.m in Sources */,
 				8440023E1768E84000D747B9 /* KRARepository.m in Sources */,
+				84273AD3178E947A00C40276 /* KROperationQueue.cpp in Sources */,
+				84273AE1178E94CA00C40276 /* KROperation.cpp in Sources */,
 				84F2FE41174028CF001B7683 /* AFXMLRequestOperation.m in Sources */,
 				844002241768E84000D747B9 /* KRAEvent.m in Sources */,
 				844002421768E84000D747B9 /* KRATypes.m in Sources */,

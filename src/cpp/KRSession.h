@@ -41,6 +41,8 @@ namespace KrakenKit {
             Session() {}
             Session(Session const&);
             void operator=(Session const&);
+			
+		private:
             std::string mAccessToken;
             std::string mBaseURL;
         };
