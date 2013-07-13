@@ -144,6 +144,7 @@
 		849E907B174D8EA9005FAB56 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849E904F174D8AA0005FAB56 /* CoreServices.framework */; };
 		84ADF9D716ADA7C60026F990 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ADF9D616ADA7C60026F990 /* Foundation.framework */; };
 		84C4542517503EF9001ECB0F /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE28174028CF001B7683 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84E606391790DCA200194C76 /* libCurl-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E606381790DCA200194C76 /* libCurl-ios.a */; };
 		84F2FE31174028CF001B7683 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE1E174028CE001B7683 /* AFHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84F2FE32174028CF001B7683 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FE1F174028CE001B7683 /* AFHTTPClient.m */; };
 		84F2FE33174028CF001B7683 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2FE20174028CE001B7683 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -414,6 +415,7 @@
 		849E9081174D8EDE005FAB56 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = ../External/Mantle/MantleTests/expecta/build/Release/libExpecta.a; sourceTree = "<group>"; };
 		84ADF9D316ADA7C60026F990 /* libKrakenKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKrakenKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ADF9D616ADA7C60026F990 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84E606381790DCA200194C76 /* libCurl-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCurl-ios.a"; path = "../src/extern/libcurl/libCurl-ios.a"; sourceTree = "<group>"; };
 		84F2FE0D1740287A001B7683 /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = External/Mantle/Mantle.xcodeproj; sourceTree = SOURCE_ROOT; };
 		84F2FE1E174028CE001B7683 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = External/AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
 		84F2FE1F174028CE001B7683 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = External/AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
@@ -467,6 +469,7 @@
 				84F2FE48174029C1001B7683 /* SystemConfiguration.framework in Frameworks */,
 				84F2FE46174028DD001B7683 /* libMantle.a in Frameworks */,
 				8415D9C5178BA5E2003C31F1 /* libjsonz.a in Frameworks */,
+				84E606391790DCA200194C76 /* libCurl-ios.a in Frameworks */,
 				84ADF9D716ADA7C60026F990 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,6 +675,7 @@
 		84ADF9D516ADA7C60026F990 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84E606381790DCA200194C76 /* libCurl-ios.a */,
 				8415D9C3178BA5E1003C31F1 /* libjsonz.a */,
 				8442D991177AA73A003F9A1F /* libSpecta.a */,
 				8442D9101779649F003F9A1F /* libcurl.dylib */,
@@ -1296,10 +1300,14 @@
 				DSTROOT = /tmp/KrakenKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/External/Mantle/Mantle/\"",
+					"\"$(SRCROOT)/../src/extern/libcurl/include\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/External/Mantle/Mantle\\\"",
+					"\\\\\\\"$(SRCROOT)/External/Mantle/Mantle\\\\\\\"",
 					"$(SRCROOT)/../src/extern/libjsonz/bld",
+					"$(SRCROOT)/../src/extern/libcurl",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1486,10 +1494,14 @@
 				DSTROOT = /tmp/KrakenKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/External/Mantle/Mantle/\"",
+					"\"$(SRCROOT)/../src/extern/libcurl/include\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/External/Mantle/Mantle\\\"",
+					"\\\\\\\"$(SRCROOT)/External/Mantle/Mantle\\\\\\\"",
 					"$(SRCROOT)/../src/extern/libjsonz/bld",
+					"$(SRCROOT)/../src/extern/libcurl",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1584,10 +1596,14 @@
 				DSTROOT = /tmp/KrakenKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/External/Mantle/Mantle/\"",
+					"\"$(SRCROOT)/../src/extern/libcurl/include\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/External/Mantle/Mantle\\\"",
+					"\\\\\\\"$(SRCROOT)/External/Mantle/Mantle\\\\\\\"",
 					"$(SRCROOT)/../src/extern/libjsonz/bld",
+					"$(SRCROOT)/../src/extern/libcurl",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1602,10 +1618,14 @@
 				DSTROOT = /tmp/KrakenKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrakenKit/KrakenKit-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/External/Mantle/Mantle/\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/External/Mantle/Mantle/\"",
+					"\"$(SRCROOT)/../src/extern/libcurl/include\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
-					"\\\"$(SRCROOT)/External/Mantle/Mantle\\\"",
+					"\\\\\\\"$(SRCROOT)/External/Mantle/Mantle\\\\\\\"",
 					"$(SRCROOT)/../src/extern/libjsonz/bld",
+					"$(SRCROOT)/../src/extern/libcurl",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
