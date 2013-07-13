@@ -17,6 +17,3 @@
 [submodule "build-mac/External/Expecta"]
 	path = build-mac/External/Expecta
 	url = https://github.com/petejkim/expecta.git
-[submodule "src/extern/curl"]
-	path = src/extern/curl
-	url = git@github.com:bagder/curl.git
