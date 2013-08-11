@@ -18,7 +18,7 @@ HTTPClient::HTTPClient(HTTPClient const&) {
 HTTPClient &HTTPClient::operator=(HTTPClient const&other) {
 	if (this == &other) return *this;
 	
-	mBaseURL.swap(other.mBaseURL);
+//	mBaseURL.swap(other.mBaseURL);
 	mOperationQueue = other.mOperationQueue;
 	mDefaultHeaders = other.mDefaultHeaders;
 	return *this;

@@ -13,7 +13,11 @@
 #include "KRError.h"
 #include "KRAPIResponse.h"
 #include "KRTypes.h"
+#if	__IPHONE_OS_VERSION_MIN_REQUIRED
+#include "curl.h"
+#else
 #include <curl/curl.h>
+#endif
 #include "KRURLRequest.h"
 
 namespace KrakenKit {
