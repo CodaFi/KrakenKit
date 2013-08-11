@@ -18,5 +18,6 @@ typedef void (^AFNetworkingFailureBlock)(AFHTTPRequestOperation *operation, NSEr
 - (AFNetworkingSuccessBlock)successHandlerForResourceClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler;
 - (AFNetworkingSuccessBlock)successHandlerForArrayOfModelClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler;
 - (AFNetworkingSuccessBlock)successHandlerForSearchArrayOfModelClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler;
+- (AFNetworkingFailureBlock)failureHandlerForClientHandler:(KRAClientCompletionBlock)handler;
 
 @end

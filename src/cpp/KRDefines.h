@@ -22,4 +22,12 @@ do { if (!(cond)) KRAssertInternal(#cond, __FILE__, __LINE__); } while(0)
 
 KRAKENKIT_EXPORT void KRAssertInternal(const char *failingStatement, const char *filename, unsigned int line);
 
+#ifndef KRGithubClientID
+#define KRGithubClientID ""
+#endif
+
+#ifndef KRGithubClientSecret
+#define KRGithubClientSecret ""
+#endif
+
 #endif

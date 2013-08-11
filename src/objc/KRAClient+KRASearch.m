@@ -15,24 +15,25 @@
 @implementation KRAClient (KRASearch)
 
 - (void)searchRepositories:(NSString *)keyword completion:(KRAClientCompletionBlock)completionHandler {
-	[self getPath:[NSString stringWithFormat:@"legacy/repos/search/%@", keyword]
-	   parameters:nil
+	NSParameterAssert(keyword != nil);
+	[self getPath:@"search/repositories"
+	   parameters:@{ @"q" : keyword }
 		  success:[self successHandlerForArrayOfModelClass:[KRARepository class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)searchIssues:(NSString *)keyword completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"legacy/issues/search/%@", keyword]
 	   parameters:nil
-		  success:[self successHandlerForArrayOfModelClass:[KRAIssue class] clientHandler:completionHandler]
-		  failure:NULL];
+		  success:[self successHandlerForSearchArrayOfModelClass:[KRAIssue class] clientHandler:completionHandler]
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)searchUsers:(NSString *)keyword completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"legacy/user/search/%@", keyword]
 	   parameters:nil
 		  success:[self successHandlerForSearchArrayOfModelClass:[KRAUser class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 @end

@@ -19,6 +19,7 @@
 - (void)repositoriesForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
 
 - (void)eventsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
+- (void)recievedEventsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
 
 - (void)notificationsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
 

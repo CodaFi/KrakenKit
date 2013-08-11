@@ -22,7 +22,7 @@ OperationQueue::~OperationQueue() {
     pthread_cond_destroy(&mLockCond);
 }
 
-void OperationQueue::addOperation(Operation &operation) {
+void OperationQueue::addOperation(Operation *operation) {
 	pthread_mutex_lock(&mLock);
     mQueue.push_back(operation);
 	std::thread newTask(&OperationQueue::dequeueAndExecute, *this);
@@ -43,8 +43,8 @@ void OperationQueue::dequeueAndExecute() {
     while (mQueue.size() == 0) {
         pthread_cond_wait(&mLockCond, &mLock);
     }
-    Operation item = mQueue.front();
+    Operation *item = mQueue.front();
     mQueue.pop_front();
     pthread_mutex_unlock(&mLock);
-	item.main();
+	item->main();
 }

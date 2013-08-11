@@ -70,6 +70,22 @@
     return dateFormatter;
 }
 
++ (NSValueTransformer *)pushedAtJSONTransformer {
+    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^(NSString *str) {
+        return [self.dateFormatter dateFromString:str];
+    } reverseBlock:^(NSDate *date) {
+        return [self.dateFormatter stringFromDate:date];
+    }];
+}
+
++ (NSValueTransformer *)updatedAtJSONTransformer {
+    return [MTLValueTransformer reversibleTransformerWithForwardBlock:^(NSString *str) {
+        return [self.dateFormatter dateFromString:str];
+    } reverseBlock:^(NSDate *date) {
+        return [self.dateFormatter stringFromDate:date];
+    }];
+}
+
 + (NSValueTransformer *)createdAtJSONTransformer {
     return [MTLValueTransformer reversibleTransformerWithForwardBlock:^(NSString *str) {
         return [self.dateFormatter dateFromString:str];

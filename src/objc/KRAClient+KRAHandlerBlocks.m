@@ -11,7 +11,7 @@
 
 @implementation KRAClient (KRAHandlerBlocks)
 
-- (AFNetworkingSuccessBlock) successHandlerForClientHandler:(KRAClientCompletionBlock)handler unboxBlock:( id ( ^)(id, NSError * __autoreleasing *) )unboxBlock {
+- (AFNetworkingSuccessBlock)successHandlerForClientHandler:(KRAClientCompletionBlock)handler unboxBlock:( id ( ^)(id, NSError * __autoreleasing *) )unboxBlock {
 	return ^(AFHTTPRequestOperation *operation, id responseJSON) {
 		id finalObject = nil;
 		NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:responseJSON options:0 error:nil];
@@ -26,7 +26,7 @@
 	};
 }
 
-- (AFNetworkingSuccessBlock) successHandlerForResourceClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler {
+- (AFNetworkingSuccessBlock)successHandlerForResourceClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler {
 	return [self successHandlerForClientHandler:handler unboxBlock: ^id (NSDictionary *responseJSON, NSError *__autoreleasing *error) {
 		id unboxedObject = nil;
 		if ([resourceClass isSubclassOfClass:MTLModel.class]) {
@@ -36,7 +36,7 @@
 	}];
 }
 
-- (NSArray *) kra_unpackResponseArray:(id)responseJSON withModelClass:(Class)resourceClass {
+- (NSArray *)kra_unpackResponseArray:(id)responseJSON withModelClass:(Class)resourceClass {
 	id unboxedObject = nil;
 	if ([resourceClass isSubclassOfClass:MTLModel.class]) {
 		NSValueTransformer *arrayTransformer = [MTLValueTransformer mtl_JSONArrayTransformerWithModelClass:resourceClass];
@@ -45,7 +45,7 @@
 	return unboxedObject;
 }
 
-- (AFNetworkingSuccessBlock) successHandlerForArrayOfModelClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler {
+- (AFNetworkingSuccessBlock)successHandlerForArrayOfModelClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler {
 	return [self successHandlerForClientHandler:handler unboxBlock: ^id (id arrayResponse, NSError *__autoreleasing *error) {
 		return [self kra_unpackResponseArray:arrayResponse withModelClass:resourceClass];
 	}];
@@ -57,14 +57,27 @@
 	}];
 }
 
-- (NSArray *) kra_unpackSearchResponseArray:(id)responseJSON withModelClass:(Class)resourceClass {
+- (NSArray *)kra_unpackSearchResponseArray:(id)responseJSON withModelClass:(Class)resourceClass {
 	id unboxedObject = nil;
-	if ([resourceClass isSubclassOfClass:MTLModel.class]) {
-		NSValueTransformer *arrayTransformer = [MTLValueTransformer mtl_JSONArrayTransformerWithModelClass:resourceClass];
-		unboxedObject = [arrayTransformer transformedValue:responseJSON[@"users"]];
+	if ([responseJSON isKindOfClass:NSDictionary.class] && [resourceClass isSubclassOfClass:MTLModel.class]) {
+		if (responseJSON[@"users"]) {
+			NSValueTransformer *arrayTransformer = [MTLValueTransformer mtl_JSONArrayTransformerWithModelClass:resourceClass];
+			unboxedObject = [arrayTransformer transformedValue:responseJSON[@"users"]];
+		} else if (responseJSON[@"repositories"]) {
+			NSValueTransformer *arrayTransformer = [MTLValueTransformer mtl_JSONArrayTransformerWithModelClass:resourceClass];
+			unboxedObject = [arrayTransformer transformedValue:responseJSON[@"repositories"]];
+		}
+
 	}
 	return unboxedObject;
 }
 
+- (AFNetworkingFailureBlock)failureHandlerForClientHandler:(KRAClientCompletionBlock)handler {
+	return ^(AFHTTPRequestOperation *operation, NSError *error) {
+		if (handler) {
+			handler(nil, error);
+		}
+	};
+}
 
 @end

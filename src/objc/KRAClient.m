@@ -46,7 +46,8 @@ NSString *const KRAUserPasswordKey = @"KRAUserPasswordKey";
 	self.parameterEncoding = AFJSONParameterEncoding;
 	[self setDefaultHeader:@"Accept" value:@"application/json"];
 	[self addObserver:self forKeyPath:@"accessToken" options:NSKeyValueObservingOptionNew context:nil];
-    
+    [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithArray:@[ @"application/vnd.github.preview", @"application/vnd.github.beta" ]]];
+	
     return self;
 }
 
@@ -190,7 +191,7 @@ NSString *const KRAUserPasswordKey = @"KRAUserPasswordKey";
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
 	if ([keyPath isEqualToString:@"accessToken"]) {
-		[self setDefaultHeader:@"Authorization" value:self.accessToken ? [@"bearer " stringByAppendingString:self.accessToken] : nil];
+		[self setDefaultHeader:@"Authorization" value:self.accessToken ? [@"token " stringByAppendingString:self.accessToken] : nil];
 	}
 }
 

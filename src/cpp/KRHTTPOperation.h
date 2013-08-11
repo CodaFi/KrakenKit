@@ -21,7 +21,9 @@ namespace KrakenKit {
 	class HTTPOperation : public Operation {
 			
 	public:
-		HTTPOperation(std::string &access_token);
+		HTTPOperation(URLRequest &request);
+		HTTPOperation(URLRequest &request, KRHTTPOperationSuccessCallback callback);
+		HTTPOperation(URLRequest &request, KRHTTPOperationSuccessCallback success, KRHTTPOperationFailureCallback failure);
 		~HTTPOperation();
 		
 		virtual void start();
@@ -36,11 +38,16 @@ namespace KrakenKit {
         
 	private:
 		CURL *mCurl;
-		std::string mAccessToken;
+		URLRequest mURLRequest;
 		
 		APIResponse *mResponse;
 		size_t mResponseLength;
 		Error mError;
+		
+#if __has_feature(blocks)
+		KRHTTPOperationSuccessCallback mSuccessBlock;
+		KRHTTPOperationFailureCallback mFailureBlock;
+#endif
 		
 	private:
 //		static size_t HeaderFunction(char *data, size_t size, size_t count, void *context);

@@ -45,6 +45,13 @@
 }
 
 - (void)eventsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
+	[self getPath:[NSString stringWithFormat:@"users/%@/events", user.login]
+	   parameters:nil
+		  success:[self successHandlerForArrayOfModelClass:[KRAEvent class] clientHandler:completionHandler]
+		  failure:NULL];
+}
+
+- (void)recievedEventsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"users/%@/received_events", user.login]
 	   parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRAEvent class] clientHandler:completionHandler]

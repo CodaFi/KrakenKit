@@ -21,7 +21,7 @@ namespace KrakenKit {
 		OperationQueue();
 		~OperationQueue();
 		
-		void addOperation(Operation &operation);
+		void addOperation(Operation *operation);
 		void cancelAllOperations();
 		
 		size_t size();
@@ -30,7 +30,7 @@ namespace KrakenKit {
 		void dequeueAndExecute();
 		
 	private:
-		std::list<Operation> mQueue;
+		std::list<Operation *> mQueue;
 		pthread_mutex_t mLock;
 		pthread_cond_t  mLockCond;
 	};

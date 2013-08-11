@@ -32,7 +32,8 @@
 		@"issue" : @"issue",
 		@"comment" : @"comment",
   		@"pullRequest" : @"pull_request",
-  		@"target" : @"target"
+  		@"target" : @"target",
+		@"member" : @"member"
 	};
 }
 

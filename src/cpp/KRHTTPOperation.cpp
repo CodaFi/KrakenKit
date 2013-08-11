@@ -7,12 +7,13 @@
 //
 
 #include "KRHTTPOperation.h"
+#include <Block.h>
 #include <jsonz/jsonz.h>
 #include "KRDefines.h"
 
 using namespace KrakenKit;
 
-KrakenKit::HTTPOperation::HTTPOperation(std::string &access_token) : mCurl(NULL), mResponse(), mResponseLength(0), mAccessToken(access_token) {
+HTTPOperation::HTTPOperation(URLRequest &request) : mCurl(NULL), mResponse(), mResponseLength(0), mURLRequest(request) {
 	mCurl = curl_easy_init();
 	KRAssert(mCurl != NULL);
 	
@@ -22,7 +23,22 @@ KrakenKit::HTTPOperation::HTTPOperation(std::string &access_token) : mCurl(NULL)
 
 }
 
-KrakenKit::HTTPOperation::~HTTPOperation() {
+HTTPOperation::HTTPOperation(URLRequest &request, KRHTTPOperationSuccessCallback callback) : HTTPOperation(request) {
+	mSuccessBlock = Block_copy(callback);
+}
+
+HTTPOperation::HTTPOperation(URLRequest &request, KRHTTPOperationSuccessCallback success, KRHTTPOperationFailureCallback failure) : HTTPOperation(request) {
+	mSuccessBlock = Block_copy(success);
+	mFailureBlock = Block_copy(failure);
+}
+
+HTTPOperation::~HTTPOperation() {
+	if (mSuccessBlock != NULL) {
+		Block_release(mSuccessBlock);
+	}
+	if (mFailureBlock != NULL) {
+		Block_release(mFailureBlock);
+	}
 	curl_easy_cleanup(mCurl);
 }
 

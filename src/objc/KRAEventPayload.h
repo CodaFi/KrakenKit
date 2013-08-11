@@ -36,6 +36,7 @@ typedef NS_ENUM(int, KRAGithubActionType) {
 @property (nonatomic, copy) NSDate *createdAt;
 
 @property (nonatomic, copy) KRAUser *target;
+@property (nonatomic, copy) KRAUser *member;
 @property (nonatomic, copy) KRAIssue *issue;
 @property (nonatomic, copy) KRAComment *comment;
 @property (nonatomic, copy) KRAPullRequest *pullRequest;
