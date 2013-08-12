@@ -66,6 +66,10 @@
     return [MTLValueTransformer mtl_JSONDictionaryTransformerWithModelClass:KRAUser.class];
 }
 
++ (NSValueTransformer *)memberJSONTransformer {
+    return [MTLValueTransformer mtl_JSONDictionaryTransformerWithModelClass:KRAUser.class];
+}
+
 + (NSValueTransformer *)commentJSONTransformer {
     return [MTLValueTransformer mtl_JSONDictionaryTransformerWithModelClass:KRAComment.class];
 }
