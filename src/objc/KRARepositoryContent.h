@@ -9,7 +9,7 @@
 #import <Mantle/Mantle.h>
 
 typedef NS_ENUM(NSUInteger, KRARepositoryContentType) {
-	KRARepositoryContentTypeNone,
+	KRARepositoryContentTypeNone = 0,
 	KRARepositoryContentTypeFile,
 	KRARepositoryContentTypeDirectory
 };

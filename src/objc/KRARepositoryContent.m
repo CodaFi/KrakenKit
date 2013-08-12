@@ -29,7 +29,9 @@
 
 + (NSValueTransformer *)typeJSONTransformer {
 	NSDictionary *actionTypes = @{
+		@"blob" : @(KRARepositoryContentTypeFile),
 		@"file" : @(KRARepositoryContentTypeFile),
+		@"tree" : @(KRARepositoryContentTypeDirectory),
 		@"dir" : @(KRARepositoryContentTypeDirectory)
 	};
 	
