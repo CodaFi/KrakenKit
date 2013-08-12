@@ -23,6 +23,13 @@
 		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
+- (void)fetchCommit:(KRACommit *)commit fromRepository:(KRARepository *)repository completion:(KRAClientCompletionBlock)completionHandler {
+	[self getPath:[NSString stringWithFormat:@"repos/%@/commits/%@", repository.fullName, commit.sha]
+	   parameters:nil
+		  success:[self successHandlerForResourceClass:KRACommit.class clientHandler:completionHandler]
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
+}
+
 - (void)branches:(KRARepository *)repository completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"repos/%@/branches", repository.fullName]
 	   parameters:nil
