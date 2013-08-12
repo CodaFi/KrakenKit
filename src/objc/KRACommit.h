@@ -17,5 +17,6 @@
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic) BOOL isDistinct;
 @property (nonatomic, copy) NSURL *url;
+@property (nonatomic, copy) NSDate *date;
 
 @end
