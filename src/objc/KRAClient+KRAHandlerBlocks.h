@@ -16,8 +16,10 @@ typedef void (^AFNetworkingFailureBlock)(AFHTTPRequestOperation *operation, NSEr
 - (NSArray *)kra_unpackResponseArray:(id)responseJSON withModelClass:(Class)resourceClass;
 - (AFNetworkingSuccessBlock)successHandlerForClientHandler:(KRAClientCompletionBlock)handler unboxBlock:(id (^)(id responseJSON, NSError **error))unboxBlock;
 - (AFNetworkingSuccessBlock)successHandlerForResourceClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler;
+- (AFNetworkingSuccessBlock)successHandlerForRawDictionaryWithClientHandler:(KRAClientCompletionBlock)handler;
+- (AFNetworkingFailureBlock)failureHandlerForClientHandler:(KRAClientCompletionBlock)handler;
+
 - (AFNetworkingSuccessBlock)successHandlerForArrayOfModelClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler;
 - (AFNetworkingSuccessBlock)successHandlerForSearchArrayOfModelClass:(Class)resourceClass clientHandler:(KRAClientCompletionBlock)handler;
-- (AFNetworkingFailureBlock)failureHandlerForClientHandler:(KRAClientCompletionBlock)handler;
 
 @end

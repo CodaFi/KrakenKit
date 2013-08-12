@@ -12,6 +12,7 @@
 #import "KRAComment.h"
 #import "KRAPullRequest.h"
 #import "KRAUser.h"
+#import "KRARepository.h"
 
 @implementation KRAEventPayload
 
@@ -33,7 +34,8 @@
 		@"comment" : @"comment",
   		@"pullRequest" : @"pull_request",
   		@"target" : @"target",
-		@"member" : @"member"
+		@"member" : @"member",
+		@"forkee" : @"forkee"
 	};
 }
 
@@ -70,6 +72,10 @@
 
 + (NSValueTransformer *)pullRequestJSONTransformer {
     return [MTLValueTransformer mtl_JSONDictionaryTransformerWithModelClass:KRAPullRequest.class];
+}
+
++ (NSValueTransformer *)forkeeJSONTransformer {
+    return [MTLValueTransformer mtl_JSONDictionaryTransformerWithModelClass:KRARepository.class];
 }
 
 + (NSDateFormatter *)dateFormatter {

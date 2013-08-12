@@ -12,6 +12,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
 	return @{
+		@"parentRepository" : @"parent",
 		@"repoID" : @"id",
 		@"name" : @"name",
 		@"fullName" : @"full_name",
@@ -34,6 +35,10 @@
 		@"masterBranch" : @"master_branch",
 		@"defaultBranch" : @"default_branch"
 	};
+}
+
++ (NSValueTransformer *)parentJSONTransformer {
+    return [MTLValueTransformer mtl_JSONDictionaryTransformerWithModelClass:KRARepository.class];
 }
 
 + (NSValueTransformer *)urlJSONTransformer {

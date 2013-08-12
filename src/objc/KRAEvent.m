@@ -89,4 +89,12 @@
     }];
 }
 
+- (void)setNilValueForKey:(NSString *)key {
+	if ([key isEqualToString:@"type"]) {
+		self.type = KRAGithubNoEventType;
+		return;
+	}
+	[super setNilValueForKey:key];
+}
+
 @end

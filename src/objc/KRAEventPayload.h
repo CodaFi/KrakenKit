@@ -15,7 +15,7 @@ typedef NS_ENUM(int, KRAGithubActionType) {
 	KRAGithubActionTypeCreated
 };
 
-@class KRAIssue, KRAComment, KRAPullRequest, KRAUser;
+@class KRAIssue, KRAComment, KRAPullRequest, KRAUser, KRARepository;
 
 @interface KRAEventPayload : MTLModel <MTLJSONSerializing>
 
@@ -40,5 +40,6 @@ typedef NS_ENUM(int, KRAGithubActionType) {
 @property (nonatomic, copy) KRAIssue *issue;
 @property (nonatomic, copy) KRAComment *comment;
 @property (nonatomic, copy) KRAPullRequest *pullRequest;
+@property (nonatomic, copy) KRARepository *forkee;
 
 @end

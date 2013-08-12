@@ -9,6 +9,7 @@
 #import <Mantle/Mantle.h>
 
 typedef NS_ENUM(int, KRAGithubEventType) {
+	KRAGithubNoEventType,
 	KRAGithubCommitCommentEventType,
 	KRAGithubCreateEventType,
 	KRAGithubDeleteEventType,

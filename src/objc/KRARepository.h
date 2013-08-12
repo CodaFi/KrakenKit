@@ -14,6 +14,7 @@
 
 @interface KRARepository : MTLModel <MTLJSONSerializing>
 
+@property (nonatomic, copy) KRARepository *parentRepository;
 @property (nonatomic, copy) NSString *repoID;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *fullName;

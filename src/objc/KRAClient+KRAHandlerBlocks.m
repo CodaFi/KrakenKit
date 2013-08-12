@@ -36,6 +36,15 @@
 	}];
 }
 
+- (AFNetworkingSuccessBlock)successHandlerForRawDictionaryWithClientHandler:(KRAClientCompletionBlock)handler {
+	return [self successHandlerForClientHandler:handler unboxBlock: ^id (id responseJSON, NSError *__autoreleasing *error) {
+		if ([responseJSON isKindOfClass:NSDictionary.class]) {
+			return responseJSON;
+		}
+		return nil;
+	}];
+}
+
 - (NSArray *)kra_unpackResponseArray:(id)responseJSON withModelClass:(Class)resourceClass {
 	id unboxedObject = nil;
 	if ([resourceClass isSubclassOfClass:MTLModel.class]) {
