@@ -20,10 +20,15 @@
 		@"content" : @"content",
 		@"sha" : @"sha",
 		@"url" : @"url",
+		@"submoduleURL" : @"submodule_git_url"
 	};
 }
 
 + (NSValueTransformer *)urlJSONTransformer {
+	return [MTLValueTransformer valueTransformerForName:MTLURLValueTransformerName];
+}
+
++ (NSValueTransformer *)submoduleURLJSONTransformer {
 	return [MTLValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
@@ -32,7 +37,9 @@
 		@"blob" : @(KRARepositoryContentTypeFile),
 		@"file" : @(KRARepositoryContentTypeFile),
 		@"tree" : @(KRARepositoryContentTypeDirectory),
-		@"dir" : @(KRARepositoryContentTypeDirectory)
+		@"dir" : @(KRARepositoryContentTypeDirectory),
+		@"symlink" : @(KRARepositoryContentTypeSymlink),
+		@"submodule" : @(KRARepositoryContentTypeSubmodule),
 	};
 	
     return [MTLValueTransformer reversibleTransformerWithForwardBlock:^(NSString *str) {

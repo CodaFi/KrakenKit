@@ -11,7 +11,9 @@
 typedef NS_ENUM(NSUInteger, KRARepositoryContentType) {
 	KRARepositoryContentTypeNone = 0,
 	KRARepositoryContentTypeFile,
-	KRARepositoryContentTypeDirectory
+	KRARepositoryContentTypeSymlink,
+	KRARepositoryContentTypeDirectory,
+	KRARepositoryContentTypeSubmodule,
 };
 
 @interface KRARepositoryContent : MTLModel <MTLJSONSerializing>
@@ -24,5 +26,7 @@ typedef NS_ENUM(NSUInteger, KRARepositoryContentType) {
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, copy) NSString *sha;
 @property (nonatomic, copy) NSURL *url;
+
+@property (nonatomic, copy) NSURL *submoduleURL; //Only applies to KRARepositoryContentTypeSubmodule
 
 @end

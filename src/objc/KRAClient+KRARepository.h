@@ -14,6 +14,10 @@
 
 - (void)fetchRepository:(KRARepository *)repository completion:(KRAClientCompletionBlock)completionHandler;
 - (void)fetchCommit:(KRACommit *)repository fromRepository:(KRARepository *)repository completion:(KRAClientCompletionBlock)completionHandler;
+
+- (void)contentsOfRepository:(KRARepository *)repository atPath:(NSString *)path completion:(KRAClientCompletionBlock)completionHandler;
+- (void)contentsOfRepository:(KRARepository *)repository atDirectory:(NSString *)path completion:(KRAClientCompletionBlock)completionHandler;
+
 - (void)branches:(KRARepository *)repository completion:(KRAClientCompletionBlock)completionHandler;
 - (void)languageStatistics:(KRARepository *)repository completion:(KRAClientCompletionBlock)completionHandler;
 - (void)repositoryContents:(KRARepository *)repository atBranch:(KRABranch *)branch completion:(KRAClientCompletionBlock)completionHandler;

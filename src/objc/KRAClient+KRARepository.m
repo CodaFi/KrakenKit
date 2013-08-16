@@ -30,6 +30,20 @@
 		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
+- (void)contentsOfRepository:(KRARepository *)repository atPath:(NSString *)path completion:(KRAClientCompletionBlock)completionHandler {
+	[self getPath:[NSString stringWithFormat:@"repos/%@/contents/%@", repository.fullName, path]
+	   parameters:nil
+		  success:[self successHandlerForResourceClass:KRARepositoryContent.class clientHandler:completionHandler]
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
+}
+
+- (void)contentsOfRepository:(KRARepository *)repository atDirectory:(NSString *)path completion:(KRAClientCompletionBlock)completionHandler {
+	[self getPath:[NSString stringWithFormat:@"repos/%@/contents/%@", repository.fullName, path]
+	   parameters:nil
+		  success:[self successHandlerForArrayOfModelClass:KRARepositoryContent.class clientHandler:completionHandler]
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
+}
+
 - (void)branches:(KRARepository *)repository completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"repos/%@/branches", repository.fullName]
 	   parameters:nil
