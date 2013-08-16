@@ -15,10 +15,11 @@
 	return @{
 		@"sha" : @"sha",
 		@"author" : @"author",
-		@"message" : @"commit.message",
+		@"message" : @"message",
 		@"isDistinct" : @"distinct",
 		@"url" : @"url",
-		@"date" : @"commit.author.date"
+		@"date" : @"commit.author.date",
+		@"commitMessage" : @"commit.message"
 	};
 }
 
