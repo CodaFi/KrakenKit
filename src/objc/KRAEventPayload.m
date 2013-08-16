@@ -43,7 +43,8 @@
 	NSDictionary *actionTypes = @{
 		@"opened" : @(KRAGithubActionTypeOpened),
 		@"closed" : @(KRAGithubActionTypeClosed),
-		@"created" : @(KRAGithubActionTypeCreated)
+		@"created" : @(KRAGithubActionTypeCreated),
+		@"reopened" : @(KRAGithubActionTypeReOpened),
 	};
 	
     return [MTLValueTransformer reversibleTransformerWithForwardBlock:^(NSString *str) {

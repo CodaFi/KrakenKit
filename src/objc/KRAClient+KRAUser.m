@@ -27,84 +27,84 @@
 	[self getPath:[NSString stringWithFormat:@"users/%@", user.login]
 	   parameters:nil
 		  success:[self successHandlerForResourceClass:[KRAUser class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)fetchUserWithID:(NSString *)userID completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"users/%@", userID]
 	   parameters:nil
 		  success:[self successHandlerForResourceClass:[KRAUser class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)repositoriesForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"users/%@/repos", user.login]
 		parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRARepository class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)eventsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"users/%@/events", user.login]
 	   parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRAEvent class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)recievedEventsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"users/%@/received_events", user.login]
 	   parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRAEvent class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)notificationsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:@"notifications"
 	   parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRANotification class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)starredRepositoriesForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"users/%@/starred", user.login]
 	   parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRARepository class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)starRepository:(KRARepository *)repo completion:(KRAClientCompletionBlock)completionHandler {
 	[self postPath:[NSString stringWithFormat:@"user/starred/%@", repo.fullName]
 		parameters:nil
 		   success:completionHandler
-		   failure:NULL];
+		   failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)unstarRepository:(KRARepository *)repo completion:(KRAClientCompletionBlock)completionHandler {
 	[self deletePath:[NSString stringWithFormat:@"user/starred/%@", repo.fullName]
 		parameters:nil
 		   success:completionHandler
-		   failure:NULL];
+			 failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)repositoriesForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"user/repos"]
 	   parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRARepository class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)issuesForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"user/issues"]
 	   parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRAIssue class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 - (void)issuesForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
 	[self getPath:[NSString stringWithFormat:@"users/%@/issues", user.name]
 	   parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRAIssue class] clientHandler:completionHandler]
-		  failure:NULL];
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 
 @end

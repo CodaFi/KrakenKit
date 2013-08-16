@@ -12,7 +12,8 @@ typedef NS_ENUM(int, KRAGithubActionType) {
 	KRAGithubActionTypeNone,
 	KRAGithubActionTypeOpened,
 	KRAGithubActionTypeClosed,
-	KRAGithubActionTypeCreated
+	KRAGithubActionTypeCreated,
+	KRAGithubActionTypeReOpened,
 };
 
 @class KRAIssue, KRAComment, KRAPullRequest, KRAUser, KRARepository;

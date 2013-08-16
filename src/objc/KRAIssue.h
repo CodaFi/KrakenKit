@@ -13,7 +13,6 @@ typedef NS_ENUM(int, KRAIssueState) {
 	KRAIssueStateClosed
 };
 
-
 @class KRAUser, KRAPullRequest;
 
 @interface KRAIssue : MTLModel <MTLJSONSerializing>
