@@ -13,6 +13,7 @@
 #import "KRAEvent.h"
 #import "KRANotification.h"
 #import "KRAIssue.h"
+#import "KRAGist.h"
 
 @interface KRAClient (KRAUserPrivate)
 
@@ -104,6 +105,27 @@
 	[self getPath:[NSString stringWithFormat:@"users/%@/issues", user.name]
 	   parameters:nil
 		  success:[self successHandlerForArrayOfModelClass:[KRAIssue class] clientHandler:completionHandler]
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
+}
+
+- (void)gistsForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler {
+	[self getPath:@"gists"
+	   parameters:nil
+		  success:[self successHandlerForArrayOfModelClass:[KRAGist class] clientHandler:completionHandler]
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
+}
+
+- (void)gistsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler {
+    [self getPath:[NSString stringWithFormat:@"users/%@/gists", user.name]
+	   parameters:nil
+		  success:[self successHandlerForArrayOfModelClass:[KRAGist class] clientHandler:completionHandler]
+		  failure:[self failureHandlerForClientHandler:completionHandler]];
+}
+
+- (void)starredGistsForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler {
+    [self getPath:@"gists/starred"
+	   parameters:nil
+		  success:[self successHandlerForArrayOfModelClass:[KRAGist class] clientHandler:completionHandler]
 		  failure:[self failureHandlerForClientHandler:completionHandler]];
 }
 

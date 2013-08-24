@@ -31,4 +31,8 @@
 - (void)issuesForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler;
 - (void)issuesForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
 
+- (void)gistsForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler;
+- (void)starredGistsForCurrentUserWithCompletion:(KRAClientCompletionBlock)completionHandler;
+- (void)gistsForUser:(KRAUser *)user completion:(KRAClientCompletionBlock)completionHandler;
+
 @end

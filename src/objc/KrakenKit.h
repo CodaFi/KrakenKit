@@ -11,6 +11,7 @@
 
 #import "KRAClient.h"
 #import "KRAClient+KRAUser.h"
+#import "KRAClient+KRAGist.h"
 #import "KRAClient+KRAIssue.h"
 #import "KRAClient+KRASearch.h"
 #import "KRAClient+KRARepository.h"
@@ -31,6 +32,7 @@
 #import "KRARepositoryContent.h"
 #import "KRABranch.h"
 #import "KRAPullRequest.h"
+#import "KRAGist.h"
 
 #import "KRANotification.h"
 
