@@ -8,7 +8,6 @@
 
 #import "KRAClient.h"
 #import "KRAUser.h"
-#import "NSData+Base64.h"
 #import "FXKeychain.h"
 #import "KRAClient+KRAUser.h"
 
