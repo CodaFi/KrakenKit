@@ -11,7 +11,7 @@
 
 @implementation KRAClient (KRAHandlerBlocks)
 
-- (AFNetworkingSuccessBlock)successHandlerForClientHandler:(KRAClientCompletionBlock)handler unboxBlock:( id ( ^)(id, NSError * __autoreleasing *) )unboxBlock {
+- (AFNetworkingSuccessBlock)successHandlerForClientHandler:(KRAClientCompletionBlock)handler unboxBlock:(id(^)(id, NSError **))unboxBlock {
 	return ^(AFHTTPRequestOperation *operation, id responseJSON) {
 		id finalObject = nil;
 		NSDictionary *JSON = [NSJSONSerialization JSONObjectWithData:responseJSON options:0 error:nil];

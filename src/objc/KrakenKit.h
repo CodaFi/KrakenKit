@@ -14,6 +14,7 @@
 #import "KRAClient+KRAIssue.h"
 #import "KRAClient+KRASearch.h"
 #import "KRAClient+KRARepository.h"
+#import "KRAClient+KRANotification.h"
 #import "KRAClient+KRAHandlerBlocks.h"
 
 #import "KRAUser.h"

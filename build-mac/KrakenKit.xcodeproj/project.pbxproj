@@ -192,6 +192,14 @@
 		84F2FECD174046B9001B7683 /* KRAUserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F2FECC174046B9001B7683 /* KRAUserSpec.m */; };
 		84F2FED817404BC8001B7683 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FED717404BC8001B7683 /* Security.framework */; };
 		84F2FED917404BEE001B7683 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2FED717404BC8001B7683 /* Security.framework */; };
+		C950CCFB17C95D07009085D4 /* KRAClient+KRAGist.h in Headers */ = {isa = PBXBuildFile; fileRef = C950CCF917C95D07009085D4 /* KRAClient+KRAGist.h */; };
+		C950CCFC17C95D07009085D4 /* KRAClient+KRAGist.h in Headers */ = {isa = PBXBuildFile; fileRef = C950CCF917C95D07009085D4 /* KRAClient+KRAGist.h */; };
+		C950CCFD17C95D07009085D4 /* KRAClient+KRAGist.m in Sources */ = {isa = PBXBuildFile; fileRef = C950CCFA17C95D07009085D4 /* KRAClient+KRAGist.m */; };
+		C950CCFE17C95D07009085D4 /* KRAClient+KRAGist.m in Sources */ = {isa = PBXBuildFile; fileRef = C950CCFA17C95D07009085D4 /* KRAClient+KRAGist.m */; };
+		C950CD0917C966BA009085D4 /* KRAClient+KRANotification.h in Headers */ = {isa = PBXBuildFile; fileRef = C950CD0717C966BA009085D4 /* KRAClient+KRANotification.h */; };
+		C950CD0A17C966BA009085D4 /* KRAClient+KRANotification.h in Headers */ = {isa = PBXBuildFile; fileRef = C950CD0717C966BA009085D4 /* KRAClient+KRANotification.h */; };
+		C950CD0B17C966BA009085D4 /* KRAClient+KRANotification.m in Sources */ = {isa = PBXBuildFile; fileRef = C950CD0817C966BA009085D4 /* KRAClient+KRANotification.m */; };
+		C950CD0C17C966BA009085D4 /* KRAClient+KRANotification.m in Sources */ = {isa = PBXBuildFile; fileRef = C950CD0817C966BA009085D4 /* KRAClient+KRANotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -479,6 +487,10 @@
 		84F2FECC174046B9001B7683 /* KRAUserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRAUserSpec.m; sourceTree = "<group>"; };
 		84F2FED717404BC8001B7683 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		84F2FEDA17404C3C001B7683 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C950CCF917C95D07009085D4 /* KRAClient+KRAGist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KRAClient+KRAGist.h"; sourceTree = "<group>"; };
+		C950CCFA17C95D07009085D4 /* KRAClient+KRAGist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KRAClient+KRAGist.m"; sourceTree = "<group>"; };
+		C950CD0717C966BA009085D4 /* KRAClient+KRANotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KRAClient+KRANotification.h"; sourceTree = "<group>"; };
+		C950CD0817C966BA009085D4 /* KRAClient+KRANotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KRAClient+KRANotification.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -539,8 +551,12 @@
 				844001E81768E84000D747B9 /* KRAClient+KRAUser.m */,
 				842B028B17B84D0600EB9672 /* KRAClient+KRARepository.h */,
 				842B028C17B84D0600EB9672 /* KRAClient+KRARepository.m */,
+				C950CD0717C966BA009085D4 /* KRAClient+KRANotification.h */,
+				C950CD0817C966BA009085D4 /* KRAClient+KRANotification.m */,
 				84D347A417BDB3F50060A937 /* KRAClient+KRAIssue.h */,
 				84D347A517BDB3F50060A937 /* KRAClient+KRAIssue.m */,
+				C950CCF917C95D07009085D4 /* KRAClient+KRAGist.h */,
+				C950CCFA17C95D07009085D4 /* KRAClient+KRAGist.m */,
 				844001E91768E84000D747B9 /* KRAClient.h */,
 				844001EA1768E84000D747B9 /* KRAClient.m */,
 				844001EB1768E84000D747B9 /* KRAComment.h */,
@@ -906,6 +922,7 @@
 				8442D918177964D5003F9A1F /* KRGithubClient.h in Headers */,
 				842B028D17B84D0600EB9672 /* KRAClient+KRARepository.h in Headers */,
 				844002151768E84000D747B9 /* KRAClient.h in Headers */,
+				C950CD0917C966BA009085D4 /* KRAClient+KRANotification.h in Headers */,
 				8442D92717796C3C003F9A1F /* KRTypes.h in Headers */,
 				844002251768E84000D747B9 /* KRAEventPayload.h in Headers */,
 				8442D91E1779650C003F9A1F /* KRHTTPOperation.h in Headers */,
@@ -929,6 +946,7 @@
 				844002111768E84000D747B9 /* KRAClient+KRAUser.h in Headers */,
 				8442D92A17796E43003F9A1F /* KRDefines.h in Headers */,
 				84C4542517503EF9001ECB0F /* AFNetworking.h in Headers */,
+				C950CCFB17C95D07009085D4 /* KRAClient+KRAGist.h in Headers */,
 				84273AE2178E94CA00C40276 /* KROperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -963,6 +981,7 @@
 				8494E10117B894DA006C1B7F /* KRARepositoryTree.h in Headers */,
 				8440020A1768E84000D747B9 /* KRAClient+KRAHandlerBlocks.h in Headers */,
 				8442D91F1779650C003F9A1F /* KRHTTPOperation.h in Headers */,
+				C950CCFC17C95D07009085D4 /* KRAClient+KRAGist.h in Headers */,
 				84F2FE3B174028CF001B7683 /* AFNetworking.h in Headers */,
 				84F2FE3C174028CF001B7683 /* AFPropertyListRequestOperation.h in Headers */,
 				8442D946177A75E7003F9A1F /* KRAPIResponse.h in Headers */,
@@ -982,6 +1001,7 @@
 				8442D92B17796E43003F9A1F /* KRDefines.h in Headers */,
 				844002121768E84000D747B9 /* KRAClient+KRAUser.h in Headers */,
 				8440023C1768E84000D747B9 /* KRARepository.h in Headers */,
+				C950CD0A17C966BA009085D4 /* KRAClient+KRANotification.h in Headers */,
 				844002401768E84000D747B9 /* KRATypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1252,6 +1272,7 @@
 				8442D970177A9944003F9A1F /* KRUser.cpp in Sources */,
 				849E9047174D8A85005FAB56 /* AFImageRequestOperation.m in Sources */,
 				8494E10217B894DA006C1B7F /* KRARepositoryTree.m in Sources */,
+				C950CD0B17C966BA009085D4 /* KRAClient+KRANotification.m in Sources */,
 				8442D96A177A991B003F9A1F /* KRAuthenticatedObject.cpp in Sources */,
 				849E9048174D8A85005FAB56 /* AFJSONRequestOperation.m in Sources */,
 				8442D91C1779650C003F9A1F /* KRHTTPOperation.cpp in Sources */,
@@ -1261,6 +1282,7 @@
 				8440022B1768E84000D747B9 /* KRAIssue.m in Sources */,
 				8442D922177967D8003F9A1F /* KRError.cpp in Sources */,
 				8440023D1768E84000D747B9 /* KRARepository.m in Sources */,
+				C950CCFD17C95D07009085D4 /* KRAClient+KRAGist.m in Sources */,
 				8442D943177A75E7003F9A1F /* KRAPIResponse.cpp in Sources */,
 				849E904A174D8A85005FAB56 /* AFURLConnectionOperation.m in Sources */,
 				844002231768E84000D747B9 /* KRAEvent.m in Sources */,
@@ -1295,7 +1317,9 @@
 				844002141768E84000D747B9 /* KRAClient+KRAUser.m in Sources */,
 				8499C753179A0432008849BF /* KRHTTPClient.cpp in Sources */,
 				8440021C1768E84000D747B9 /* KRAComment.m in Sources */,
+				C950CD0C17C966BA009085D4 /* KRAClient+KRANotification.m in Sources */,
 				8440023A1768E84000D747B9 /* KRAPullRequest.m in Sources */,
+				C950CCFE17C95D07009085D4 /* KRAClient+KRAGist.m in Sources */,
 				844002101768E84000D747B9 /* KRAClient+KRASearch.m in Sources */,
 				84F2FE38174028CF001B7683 /* AFJSONRequestOperation.m in Sources */,
 				84F2FE3D174028CF001B7683 /* AFPropertyListRequestOperation.m in Sources */,
